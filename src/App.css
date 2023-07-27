@@ -1,38 +1,173 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Raleway:wght@500;700;900&family=Roboto:wght@500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {}
+
+
+.bold {
+  font-weight: 900;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2,
+h3,
+h4,
+h5,
+th,
+span {
+  font-family: "Raleway", sans-serif !important;
+  font-weight: 700;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+p,
+a,
+li {
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+::-webkit-scrollbar {
+  background: inherit;
+}
+
+header nav a,
+footer {
+  font-family: "Raleway", sans-serif !important;
+  color: #000 !important;
+}
+
+nav,
+footer {
+  z-index: 10;
+  background: linear-gradient(120deg, #bccaf8,
+      #e2e2e2);
+
+}
+
+footer {
   display: flex;
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 50px;
+}
+
+button.navbar-toggler {
+  background-color: #ccc !important;
+}
+
+div.box {
+
+  color: #fff;
+  background: linear-gradient(120deg, #360033, #0b8793);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.btn-common {
+  cursor: pointer;
+  margin: 0.2rem;
+  position: relative;
+  font-size: 1rem;
+  padding: 0.5rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: hidden;
+  border-width: 0;
+  outline: none;
+  border-radius: 2rem;
+  /* background-color: #52c234; */
+  background: linear-gradient(120deg, #bccaf8dd,
+      #e2e2e2);
+  color: #000;
+  transition: all background-color 0.8s;
+  background-size: 140%;
+}
+
+.btn-common:hover {
+  background-position: 90%;
+}
+
+/* home page styles */
+
+div.box {
+  padding: 2rem 2.5rem !important;
+  display: flex;
+
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+
+div.box section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  height: 90vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+div.holder {
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 360px;
+ 
+  justify-content: space-around;
+  border-radius: 1rem;
+}
+
+div.holder div:nth-child(2) {
+  min-height: 200px;
+  align-self: flex-start;
+ 
+}
+
+div.holder div:nth-child(3) {
+  align-self: flex-end;
+ 
+}
+
+
+div.image {
+  height: 100px;
+}
+
+div.image img {
+  height: 100%;
+}
+
+@media screen and (max-width:991px) {
+  footer {
+    align-items: center;
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  div.box section {
+    grid-template-columns: repeat(1, 1fr);
+    height: 100vh;
+    padding: 2rem;
+  }
+
+  div.holder {
+    height: auto;
+
+    min-width: auto;
   }
 }

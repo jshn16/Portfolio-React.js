@@ -128,7 +128,14 @@ div.holder {
   flex-direction: column;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   height: 360px;
- 
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.050);
+  border-radius: 16px;
+
+  backdrop-filter: blur(5.1px);
+  -webkit-backdrop-filter: blur(1px);
+  border: 1px solid rgba(255, 255, 255, 0.02);
+
   justify-content: space-around;
   border-radius: 1rem;
 }
@@ -136,12 +143,12 @@ div.holder {
 div.holder div:nth-child(2) {
   min-height: 200px;
   align-self: flex-start;
- 
+
 }
 
 div.holder div:nth-child(3) {
   align-self: flex-end;
- 
+
 }
 
 
@@ -162,7 +169,7 @@ div.image img {
   div.box section {
     grid-template-columns: repeat(1, 1fr);
     height: 100vh;
-    padding: 2rem;
+    padding: 1rem;
   }
 
   div.holder {

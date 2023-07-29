@@ -13,6 +13,7 @@ import Footer from "./views/components/footer";
 import Home from "./views/content/home";
 import Projects from "./views/content/projects";
 import Services from "./views/content/services";
+import Contact from './views/content/contact'
 
 function App() {
   return (
@@ -30,6 +31,10 @@ function App() {
         </Routes>
         <Routes>
           <Route path="/services" element={<Services />} />
+        </Routes>
+
+        <Routes>
+          <Route path="/contact" element={<Contact/>}/>
         </Routes>
         <Footer></Footer>
       </BrowserRouter>

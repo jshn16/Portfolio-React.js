@@ -43,7 +43,7 @@ header nav a,
 footer {
   font-family: "Raleway", sans-serif !important;
   color: #fff !important;
-  font-weight: 500 ;
+  font-weight: 500;
 }
 
 nav,
@@ -53,7 +53,7 @@ footer {
 
 }
 
-nav a.bold{
+nav a.bold {
   font-size: 1.5rem;
 }
 
@@ -126,7 +126,7 @@ div.box section {
   overflow-x: auto;
   scroll-behavior: smooth;
   height: 100vh;
-  
+
 }
 
 div.holder {
@@ -136,7 +136,7 @@ div.holder {
   flex-direction: column;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   height: auto;
-  
+
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.050);
   border-radius: 16px;
@@ -166,12 +166,91 @@ div.image-holder-projects {
 }
 
 div.image-holder-services {
-  
+
   height: 200px;
 }
 
-div.image-holder-projects img , div.image-holder-services img {
+div.image-holder-projects img,
+div.image-holder-services img {
   padding: 1rem;
+  height: 100%;
+}
+
+/* contact form styling */
+
+div.contact-box {
+ 
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: flex-start;
+  
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  height: 100vh;
+
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  
+}
+
+div.contact-box>div{
+  margin: 1rem;
+}
+
+div.contactForm{
+  background: rgba(255, 255, 255, 0.050);
+  border-radius: 16px;
+  padding: 1rem;
+  backdrop-filter: blur(5.1px);
+  -webkit-backdrop-filter: blur(1px);
+  border: 1px solid rgba(255, 255, 255, 0.02);
+
+  /* justify-content: space-around; */
+  border-radius: 1rem;
+}
+
+div.item {
+  margin: 0.5rem 0;
+}
+
+div.item input {
+  width: 300px;
+  align-items: center;
+  font-family: 'Quicksand', sans-serif;
+  border: none;
+  border-radius: 16px;
+  padding: 4px 9px;
+
+}
+
+div.item label {
+  width: 120px;
+  display: inline-block;
+  font-size: 18px;
+}
+
+
+textarea {
+  height: 100px;
+  width: 300px;
+  border-radius: 1rem;
+  padding: 10px 14px;
+  border: none;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  
+}
+
+div.item label::after {
+  content: ":";
+}
+
+
+div.emailImageBox {
+  height: 400px;
+}
+
+div.emailImageBox img {
   height: 100%;
 }
 
@@ -193,5 +272,26 @@ div.image-holder-projects img , div.image-holder-services img {
     height: auto !important;
 
     min-width: auto;
+  }
+
+  div.contact-box {
+    
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  div.emailImageBox {
+    height: 300px;
+  }
+
+  div.contactForm{
+    height: auto;
+  }
+
+  div.contactForm input, textarea{
+    width: 100%;
   }
 }

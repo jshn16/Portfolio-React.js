@@ -16,10 +16,11 @@ function Project() {
       <hr />
       <section>
         <div className="holder">
-          <div className="image">
+          <div className="image-holder-projects">
             <img src={WeatherAppImage} />
           </div>
           <div>
+          <h5>Season Sure</h5>
             <p>
               Designed a webpage that emulates the user experience of weather
               applications using HTML5, CSS3, JSON, and JavaScript. It utilizes
@@ -33,11 +34,12 @@ function Project() {
         </div>
 
         <div className="holder">
-          <div className="image">
+          <div className="image-holder-projects">
             <img src={taskAppIage} />
           </div>
 
           <div>
+            <h5>To-Do-List</h5>
             <p>
               Application designed using HTML5, CSS3, and JavaScript that
               replicates the functioning of real life list of tasks you need to
@@ -52,7 +54,7 @@ function Project() {
         </div>
 
         <div className="holder">
-          <div className="image">
+          <div className="image-holder-projects">
             <img src={NotesAppImage} />
           </div>
           <div>
@@ -70,7 +72,7 @@ function Project() {
         </div>
 
         <div className="holder">
-          <div className="image">
+          <div className="image-holder-projects">
             <img src={greenGaugeAppImage} />
           </div>
           <div>
@@ -94,7 +96,7 @@ function Project() {
         </div>
 
         <div className="holder">
-          <div className="image">
+          <div className="image-holder-projects">
             <img src={carbaseAppImage} />
           </div>
 

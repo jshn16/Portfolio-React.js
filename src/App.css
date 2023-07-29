@@ -42,20 +42,24 @@ li {
 header nav a,
 footer {
   font-family: "Raleway", sans-serif !important;
-  color: #000 !important;
+  color: #fff !important;
+  font-weight: 700 !important;
 }
 
 nav,
 footer {
-  z-index: 10;
-  background: linear-gradient(120deg, #bccaf8,
-      #e2e2e2);
+  background: linear-gradient(120deg, #360033, #0b8793);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
+}
+
+nav a.bold{
+  font-size: 1.5rem;
 }
 
 footer {
   display: flex;
-
+  padding: 0.5rem;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -64,15 +68,18 @@ footer {
 }
 
 button.navbar-toggler {
-  background-color: #ccc !important;
+  border: 4px #fff solid;
+  border-radius: 2rem;
 }
+
+
 
 div.box {
 
   color: #fff;
   background: linear-gradient(120deg, #360033, #0b8793);
   background-repeat: no-repeat;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .btn-common {
@@ -115,10 +122,11 @@ div.box section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
-  padding: 1rem;
+  padding: 2rem 1rem;
   overflow-x: auto;
   scroll-behavior: smooth;
-  height: 90vh;
+  height: 100vh;
+  
 }
 
 div.holder {
@@ -127,7 +135,8 @@ div.holder {
   align-items: flex-start;
   flex-direction: column;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  height: 360px;
+  height: auto;
+  
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.050);
   border-radius: 16px;
@@ -152,16 +161,21 @@ div.holder div:nth-child(3) {
 }
 
 
-div.image {
+div.image-holder-projects {
   height: 100px;
 }
 
-div.image img {
+div.image-holder-services {
+  height: 150px;
+}
+
+div.image-holder-projects img , div.image-holder-services img {
   height: 100%;
 }
 
 @media screen and (max-width:991px) {
   footer {
+
     align-items: center;
     justify-content: center;
   }
@@ -170,10 +184,11 @@ div.image img {
     grid-template-columns: repeat(1, 1fr);
     height: 100vh;
     padding: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   div.holder {
-    height: auto;
+    height: auto !important;
 
     min-width: auto;
   }

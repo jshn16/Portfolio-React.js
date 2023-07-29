@@ -8,10 +8,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //Components
 import Header from "./views/components/header";
-import Footer from "./views/components/footer"
+import Footer from "./views/components/footer";
 //Contents
 import Home from "./views/content/home";
 import Projects from "./views/content/projects";
+import Services from "./views/content/services";
 
 function App() {
   return (
@@ -24,11 +25,11 @@ function App() {
         <Routes>
           <Route path="/home" element={<Home />}></Route>
         </Routes>
-
         <Routes>
-          <Route path="/projects" element={<Projects />}>
-
-          </Route>
+          <Route path="/projects" element={<Projects />}></Route>
+        </Routes>
+        <Routes>
+          <Route path="/services" element={<Services />} />
         </Routes>
         <Footer></Footer>
       </BrowserRouter>

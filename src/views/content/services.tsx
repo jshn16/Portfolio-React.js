@@ -25,9 +25,7 @@ function Services() {
                             Photoshop, and InDesign)
                         </p>
                     </div>
-                    <div>
-                        <button className="btn-common">Case Study</button>
-                    </div>
+
                 </div>
 
                 <div className="holder">
@@ -38,18 +36,13 @@ function Services() {
                     <div>
                         <h5>Web Designing</h5>
                         <p>
-                            Enthusiastic and self-motivated web designer with 3+ years of
-                            experience. Bringing top-class frontend development, UX, and
-                            visual design skills. I specialize in UX and UI designing to create
-                            websites that don't just do business but focus on clarity.
-                            Webpages are designed and developed using latest principles,
-                            trends and techiques.
+                            Enthusiastic and self-motivated web designer with 3+ years of experience. Bringing top-class frontend development, UX, and
+                            visual design skills. I specialize in UX and UI designing to create websites that don't just do business but focus on clarity.
+                            Webpages are designed and developed using latest principles, trends and techiques.
                         </p>
                     </div>
 
-                    <div>
-                        <button className="btn-common">Case Study</button>
-                    </div>
+
                 </div>
 
                 <div className="holder">
@@ -65,9 +58,7 @@ function Services() {
                             publication marketing, and web-based advertising.
                         </p>
                     </div>
-                    <div>
-                        <button className="btn-common">Case Study</button>
-                    </div>
+
                 </div>
 
                 <div className="holder">
@@ -83,9 +74,7 @@ function Services() {
                             high user traffic, page views and page SEO rankings.
                         </p>
                     </div>
-                    <div>
-                        <button className="btn-common">Case Study</button>
-                    </div>
+
                 </div>
             </section>
         </div>

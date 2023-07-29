@@ -43,7 +43,7 @@ header nav a,
 footer {
   font-family: "Raleway", sans-serif !important;
   color: #fff !important;
-  font-weight: 700 !important;
+  font-weight: 500 ;
 }
 
 nav,
@@ -145,7 +145,7 @@ div.holder {
   -webkit-backdrop-filter: blur(1px);
   border: 1px solid rgba(255, 255, 255, 0.02);
 
-  justify-content: space-around;
+  /* justify-content: space-around; */
   border-radius: 1rem;
 }
 
@@ -162,14 +162,16 @@ div.holder div:nth-child(3) {
 
 
 div.image-holder-projects {
-  height: 100px;
-}
-
-div.image-holder-services {
   height: 150px;
 }
 
+div.image-holder-services {
+  
+  height: 200px;
+}
+
 div.image-holder-projects img , div.image-holder-services img {
+  padding: 1rem;
   height: 100%;
 }
 

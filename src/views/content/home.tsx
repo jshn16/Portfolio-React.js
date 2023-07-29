@@ -1,6 +1,13 @@
 import React, { useEffect } from "react";
+import Pdf from '../../assets/resume.pdf'
+import  fileSaver from 'file-saver' ;
 
 function Home() {
+
+  const saveFile=()=>{
+    
+   fileSaver.saveAs(Pdf,'resume.pdf')
+  }
 
     useEffect(()=>{
         document.title='Home'
@@ -23,7 +30,7 @@ function Home() {
 
             <div>
                 <button className="btn-common">Know More</button>
-                <button className="btn-common">Download Resume</button>
+                <button className="btn-common" onClick={saveFile} >Download Resume</button>
             </div>
         </div>
     );

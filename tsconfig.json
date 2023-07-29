@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "typeRoots": ["resume.d.ts"],
     "target": "es5",
     "lib": [
       "dom",

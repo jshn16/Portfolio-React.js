@@ -198,6 +198,20 @@ div.contact-box>div{
   margin: 1rem;
 }
 
+form.form{
+  display: flex;
+  flex-direction: column;
+}
+
+form.form div:nth-child(3){
+  display: flex;
+  align-items: flex-start;
+}
+
+form.form div:nth-child(4){
+  align-self: flex-end;
+}
+
 div.contactForm{
   background: rgba(255, 255, 255, 0.050);
   border-radius: 16px;
@@ -284,7 +298,8 @@ div.emailImageBox img {
   }
 
   div.emailImageBox {
-    height: 300px;
+   
+    height: 250px;
   }
 
   div.contactForm{
@@ -293,5 +308,9 @@ div.emailImageBox img {
 
   div.contactForm input, textarea{
     width: 100%;
+  }
+
+  form.form div:nth-child(3){
+    flex-direction: column;
   }
 }

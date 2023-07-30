@@ -44,18 +44,18 @@ function Contact() {
             <hr />
             <form
               ref={emailForm}
-              className=""
+              className="form"
               action=""
-              id="contactForm"
+              
               onSubmit={sendEmail}
             >
               <div className="item" id="item-1">
-                <label id="fName">First Name</label>
+                <label id="fName">Name</label>
                 <input
                   type="text"
                   name="user_name"
                   id="fName"
-                  placeholder="First Name"
+                  placeholder="Name"
                   required
                 />
               </div>
@@ -82,8 +82,8 @@ function Contact() {
                             </div> */}
 
               <div className="item" id="item-5">
-                <label for="textarea">Message</label>
-                <textarea id="textarea" name="message" required></textarea>
+                <label htmlFor="textarea">Message</label>
+                <textarea id="textarea" name="message" placeholder="Message" required></textarea>
               </div>
 
               <div className="item" id="item-6">

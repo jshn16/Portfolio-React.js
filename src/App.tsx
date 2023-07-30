@@ -21,20 +21,20 @@ function App() {
       <BrowserRouter>
         <Header></Header>
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+          <Route path="/" element={<Home />} />
         </Routes>
         <Routes>
-          <Route path="/home" element={<Home />}></Route>
+          <Route path="/home" element={<Home />} />
         </Routes>
         <Routes>
-          <Route path="/projects" element={<Projects />}></Route>
+          <Route path="/projects" element={<Projects />} />
         </Routes>
         <Routes>
           <Route path="/services" element={<Services />} />
         </Routes>
 
         <Routes>
-          <Route path="/contact" element={<Contact/>}/>
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer></Footer>
       </BrowserRouter>

@@ -20,9 +20,8 @@ function Contact() {
       )
       .then(
         (result) => {
-          
-          alert('Email Sent!')
-          emailForm.current.reset()
+          alert("Email Sent!");
+          emailForm.current.reset();
         },
         (error) => {
           console.log(error.text);
@@ -36,7 +35,7 @@ function Contact() {
       <hr />
       <div className="contact-box">
         <div className="emailImageBox">
-          <img src={emailLogo}></img>
+          <img alt="emailLogo" src={emailLogo}></img>
         </div>
         <div className="contactForm">
           <div id="formContainer">
@@ -46,7 +45,6 @@ function Contact() {
               ref={emailForm}
               className="form"
               action=""
-              
               onSubmit={sendEmail}
             >
               <div className="item" id="item-1">
@@ -83,7 +81,12 @@ function Contact() {
 
               <div className="item" id="item-5">
                 <label htmlFor="textarea">Message</label>
-                <textarea id="textarea" name="message" placeholder="Message" required></textarea>
+                <textarea
+                  id="textarea"
+                  name="message"
+                  placeholder="Message"
+                  required
+                ></textarea>
               </div>
 
               <div className="item" id="item-6">

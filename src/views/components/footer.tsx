@@ -3,11 +3,9 @@ import React from "react";
 function footer() {
   return (
     <footer>
-     <div>
-        <p>&copy; 2023 All Rights Reserved</p>
-     </div>
-        
-      
+      <div>
+        <h5>&copy; 2023 All Rights Reserved</h5>
+      </div>
     </footer>
   );
 }

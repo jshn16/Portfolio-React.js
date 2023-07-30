@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -14,8 +15,22 @@ import Home from "./views/content/home";
 import Projects from "./views/content/projects";
 import Services from "./views/content/services";
 import Contact from './views/content/contact'
+import About from './views/content/about'
 
 function App() {
+
+  //disabled in production mode.
+
+  useEffect(() => {
+    const handleContextmenu = (event: any) => {
+      event.preventDefault();
+    };
+    document.addEventListener("contextmenu", handleContextmenu);
+    return function cleanup() {
+      document.removeEventListener("contextmenu", handleContextmenu);
+    };
+  }, []);
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -35,6 +50,10 @@ function App() {
 
         <Routes>
           <Route path="/contact" element={<Contact />} />
+        </Routes>
+
+        <Routes>
+          <Route path="/about" element={<About />} />
         </Routes>
         <Footer></Footer>
       </BrowserRouter>

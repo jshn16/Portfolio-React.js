@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter,BrowserRouter, Routes, Route } from "react-router-dom";
 
 //Components
 import Header from "./views/components/header";
@@ -19,7 +19,7 @@ import About from './views/content/about'
 
 function App() {
 
-  //disabled in production mode.
+  // disabled in production mode.
 
   // useEffect(() => {
   //   const handleContextmenu = (event: any) => {
@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Header></Header>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -56,7 +56,7 @@ function App() {
           <Route path="/about" element={<About />} />
         </Routes>
         <Footer></Footer>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }

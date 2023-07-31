@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useRef } from "react";
 import emailLogo from "../../assets/Email Marketing Illustration.png";
-
 import emailjs from "@emailjs/browser";
 
 function Contact() {
+
+  useEffect(() => {
+    document.title = 'Contact'
+}, [])
+
   const emailForm = useRef();
 
   //using emailjs to recieve email.
@@ -30,6 +34,8 @@ function Contact() {
   }
 
   return (
+
+
     <div className="box">
       <h1 className="bold">Contact</h1>
       <hr />

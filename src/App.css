@@ -105,12 +105,14 @@ div.box {
   background: linear-gradient(120deg, #bccaf8dd,
       #e2e2e2);
   color: #000;
-  transition: all background-color 0.8s;
-  background-size: 140%;
+ transition: all 0.8s ease-in-out;
+  background-size: 200%;
 }
 
 .btn-common:hover {
-  background-position: 90%;
+  background-position: 200%;
+  
+  border-radius: 0.5rem;
 }
 
 /* home page styles */

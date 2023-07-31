@@ -22,7 +22,7 @@ function Home() {
             <hr />
 
             <div>
-                <h2>Hi, My Name Is Jashan</h2>
+                <h2>Hi, My Name is Jashan</h2>
             </div>
 
             <div>

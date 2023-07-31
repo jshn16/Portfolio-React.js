@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import graphicDesiginingLogo from '../../assets/graphic-designing.png'
 import webDevelopmentLogo from '../../assets/web-development.png'
@@ -6,6 +6,12 @@ import webDesigningLogo from '../../assets/web-designing.png'
 import digitalMarketingLogo from '../../assets/digital-marketing.png'
 
 function Services() {
+
+    useEffect(() => {
+        document.title = 'Services'
+    }, [])
+
+
     return (
         <div className="box">
             <h1 className="bold">Services</h1>

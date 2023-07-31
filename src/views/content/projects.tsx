@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
 
 import WeatherAppImage from "../../assets/weather-app.png";
-import taskAppIage from "../../assets/to-do-list.png";
+import taskAppImage from "../../assets/to-do-list.png";
 import NotesAppImage from "../../assets/notes.png";
 import greenGaugeAppImage from "../../assets/green-guage-logo.png";
 import carbaseAppImage from "../../assets/carbase-logo.png";
+import { Link } from "react-router-dom";
 function Project() {
   useEffect(() => {
     document.title = "Projects";
@@ -20,22 +21,29 @@ function Project() {
             <img src={WeatherAppImage} />
           </div>
           <div>
-          <h5>Season Sure</h5>
+            <h5>Season Sure</h5>
             <p>
               Designed a webpage that emulates the user experience of weather
               applications using HTML5, CSS3, JSON, and JavaScript. It utilizes
-              fetch and geolocation APIs to get data in JSON from popular
-              weather forecasting websites.{" "}
+              openweather, fetch, and geolocation APIs to get data in JSON from
+              popular weather forecasting website. The JSON data is then parsed
+              into respected values.
             </p>
           </div>
           <div>
-            <button className="btn-common">Case Study</button>
+            <a
+              target="_blank"
+              href="https://jshn16.github.io/weather-app/"
+              className="btn-common"
+            >
+              Case Study
+            </a>
           </div>
         </div>
 
         <div className="holder">
           <div className="image-holder-projects">
-            <img src={taskAppIage} />
+            <img src={taskAppImage} alt="taskAppImage" />
           </div>
 
           <div>
@@ -49,7 +57,13 @@ function Project() {
           </div>
 
           <div>
-            <button className="btn-common">Case Study</button>
+            <a
+              target="_blank"
+              href="https://jshn16.github.io/to-do-list-js/"
+              className="btn-common"
+            >
+              Case Study
+            </a>
           </div>
         </div>
 
@@ -67,7 +81,13 @@ function Project() {
             </p>
           </div>
           <div>
-            <button className="btn-common">Case Study</button>
+            <a
+              target="_blank"
+              href="https://notely-5bnr.onrender.com/"
+              className="btn-common"
+            >
+              Case Study
+            </a>
           </div>
         </div>
 
@@ -91,20 +111,29 @@ function Project() {
             </ul>
           </div>
           <div>
-            <button className="btn-common">Case Study</button>
+            <a
+              target="_blank"
+              href="https://greengauge.onrender.com/"
+              className="btn-common"
+            >
+              Case Study
+            </a>
           </div>
         </div>
 
         <div className="holder">
           <div className="image-holder-projects">
             <img src={carbaseAppImage} />
+            {/* <a href="https://www.flaticon.com/free-icons/car-service" title="car service icons">Car service icons created by wanicon - Flaticon</a> */}
           </div>
 
           <div>
             <h5>Carbase</h5>
             <p>
-              Developed a web application for a car service company, using
-              Express.JS, Mongo DB and JavaScript.
+              Developed a web application for a car service company, that can
+              used for save clinets and their vehicle information in records.
+              Highly useful for managing huge client base. Developed with use of
+              Node.js, Express.JS, Mongo DB, and JavaScript.
             </p>
             <ul>
               <li>Used to perform CRUD operations on data.</li>
@@ -117,7 +146,13 @@ function Project() {
           </div>
 
           <div>
-            <button className="btn-common">Case Study</button>
+            <a
+              target="_blank"
+              href="https://carbase-comp2106.onrender.com"
+              className="btn-common"
+            >
+              Case Study
+            </a>
           </div>
         </div>
       </section>

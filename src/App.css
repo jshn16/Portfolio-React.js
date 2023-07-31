@@ -17,10 +17,16 @@ h2,
 h3,
 h4,
 h5,
-th,
-span {
+th {
   font-family: "Raleway", sans-serif !important;
   font-weight: 700;
+}
+
+span {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  text-transform: capitalize;
 }
 
 p,
@@ -145,12 +151,12 @@ div.holder {
   -webkit-backdrop-filter: blur(1px);
   border: 1px solid rgba(255, 255, 255, 0.02);
 
-  /* justify-content: space-around; */
+
   border-radius: 1rem;
 }
 
 div.holder div:nth-child(2) {
-  min-height: 200px;
+  min-height: 230px;
   align-self: flex-start;
 
 }
@@ -179,40 +185,40 @@ div.image-holder-services img {
 /* contact form styling */
 
 div.contact-box {
- 
+
   margin-left: auto;
   margin-right: auto;
   display: flex;
   align-items: flex-start;
-  
+
   overflow-x: auto;
   scroll-behavior: smooth;
   height: 100vh;
 
   overflow-x: auto;
   scroll-behavior: smooth;
-  
+
 }
 
-div.contact-box>div{
+div.contact-box>div {
   margin: 1rem;
 }
 
-form.form{
+form.form {
   display: flex;
   flex-direction: column;
 }
 
-form.form div:nth-child(3){
+form.form div:nth-child(3) {
   display: flex;
   align-items: flex-start;
 }
 
-form.form div:nth-child(4){
+form.form div:nth-child(4) {
   align-self: flex-end;
 }
 
-div.contactForm{
+div.contactForm {
   background: rgba(255, 255, 255, 0.050);
   border-radius: 16px;
   padding: 1rem;
@@ -252,7 +258,7 @@ textarea {
   padding: 10px 14px;
   border: none;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-  
+
 }
 
 div.item label::after {
@@ -270,15 +276,55 @@ div.emailImageBox img {
 
 
 /* about page styles */
-div.aboutPhotoHolder{
+div.aboutPhotoHolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 350px;
 }
 
-div.aboutPhotoHolder img{
-  height: 100%;
+div.aboutPhotoHolder img {
+  height: auto;
+  width: auto;
+  max-width: 300px;
+  max-height: 300px;
+  clip-path: circle(40%);
+  transform: scale(1.5);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 0.8s ease-in-out;
 }
 
+div.aboutPhotoHolder img:hover{
+  transform: scale(1.6);
+}
 
+div.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
+  justify-items: center;
+  height: 100vh;
+  overflow: auto;
+  margin-bottom: 2rem;
+}
+
+div.about>div:nth-child(2) {
+  background: rgba(255, 255, 255, 0.050);
+  border-radius: 16px;
+  padding: 1rem;
+  backdrop-filter: blur(5.1px);
+  -webkit-backdrop-filter: blur(1px);
+  border: 1px solid rgba(255, 255, 255, 0.02);
+  overflow: auto;
+  cursor: default;
+}
+
+@media screen and (max-width:1110px) {
+  div.box section {
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+}
 
 @media screen and (max-width:991px) {
   footer {
@@ -301,7 +347,7 @@ div.aboutPhotoHolder img{
   }
 
   div.contact-box {
-    
+
     align-items: center;
     flex-direction: column;
     height: 100vh;
@@ -310,19 +356,38 @@ div.aboutPhotoHolder img{
   }
 
   div.emailImageBox {
-   
+
     height: 250px;
   }
 
-  div.contactForm{
+  div.contactForm {
     height: auto;
   }
 
-  div.contactForm input, textarea{
+  div.contactForm input,
+  textarea {
     width: 100%;
   }
 
-  form.form div:nth-child(3){
+  form.form div:nth-child(3) {
     flex-direction: column;
+  }
+
+  div.about {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  div.about>div {
+    margin: 1rem 0 ;
+    min-height: 300px;
+  }
+
+  div.aboutPhotoHolder img {
+    height: 270px;
+
   }
 }

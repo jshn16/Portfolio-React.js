@@ -1,21 +1,22 @@
 import React, { useEffect } from "react";
 import Pdf from '../../assets/resume.pdf'
-import  fileSaver from 'file-saver' ;
+import fileSaver from 'file-saver';
+import { Link } from "react-router-dom";
 
 function Home() {
 
-  const saveFile=()=>{
-    
-   fileSaver.saveAs(Pdf,'resume.pdf')
-  }
+    const saveFile = () => {
 
-    useEffect(()=>{
-        document.title='Home'
-    },[])
-        
+        fileSaver.saveAs(Pdf, 'resume.pdf')
+    }
+
+    useEffect(() => {
+        document.title = 'Home'
+    }, [])
+
 
     return (
-        
+
         <div className="box">
             <h1 className="bold">Home</h1>
             <hr />
@@ -29,8 +30,8 @@ function Home() {
             </div>
 
             <div>
-                <button className="btn-common">Know More</button>
-                <button className="btn-common" onClick={saveFile} >Download Resume</button>
+                <Link to={'/about'} className="btn-common">Know More</Link>
+                <a className="btn-common" onClick={saveFile} >Download Resume</a>
             </div>
         </div>
     );

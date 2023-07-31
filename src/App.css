@@ -134,6 +134,7 @@ div.box section {
   overflow-x: auto;
   scroll-behavior: smooth;
   height: 100vh;
+  margin-bottom: 2rem;
 
 }
 

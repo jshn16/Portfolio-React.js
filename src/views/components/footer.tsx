@@ -4,7 +4,7 @@ function footer() {
   return (
     <footer>
       <div>
-        <h5>&copy; 2023 All Rights Reserved</h5>
+        <h5>&copy; 2023 jshnsaini</h5>
       </div>
     </footer>
   );

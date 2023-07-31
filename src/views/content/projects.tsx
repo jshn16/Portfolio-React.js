@@ -257,7 +257,7 @@ function Project() {
           <div>
             <a
               target="_blank"
-              href="Link: https://shorturl.at/ituUZ"
+              href="https://shorturl.at/ituUZ"
               className="btn-common"
             >
               Case Study

@@ -6,8 +6,8 @@
   box-sizing: border-box;
 }
 
-:root {}
-
+:root {
+}
 
 .bold {
   font-weight: 900;
@@ -23,7 +23,7 @@ th {
 }
 
 span {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: italic;
   font-weight: 900;
   text-transform: capitalize;
@@ -56,21 +56,10 @@ nav,
 footer {
   background: linear-gradient(120deg, #360033, #0b8793);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
 }
 
 nav a.bold {
   font-size: 1.5rem;
-}
-
-footer {
-  display: flex;
-  padding: 0.5rem;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  min-height: 60px;
 }
 
 button.navbar-toggler {
@@ -78,10 +67,7 @@ button.navbar-toggler {
   border-radius: 2rem;
 }
 
-
-
 div.box {
-
   color: #fff;
   background: linear-gradient(120deg, #360033, #0b8793);
   background-repeat: no-repeat;
@@ -102,18 +88,47 @@ div.box {
   outline: none;
   border-radius: 2rem;
   /* background-color: #52c234; */
-  background: linear-gradient(120deg, #bccaf8dd,
-      #e2e2e2);
+  background: linear-gradient(120deg, #bccaf8dd, #e2e2e2);
   color: #000;
- transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   background-size: 200%;
 }
 
 .btn-common:hover {
   background-position: 200%;
-  
+
   border-radius: 0.5rem;
 }
+
+
+footer {
+  padding: 0.5rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer > div {
+  padding: 1rem 0;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer > div > div:nth-child(1) {
+  flex-grow: 1;
+}
+
+footer span {
+  cursor: default;
+  font-style: normal;
+  color: #ccc;
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.8rem;
+}
+
 
 /* home page styles */
 
@@ -122,9 +137,7 @@ div.box {
   display: flex;
 
   flex-direction: column;
-
 }
-
 
 div.box section {
   display: grid;
@@ -135,7 +148,6 @@ div.box section {
   scroll-behavior: smooth;
   height: 100vh;
   margin-bottom: 2rem;
-
 }
 
 div.holder {
@@ -147,13 +159,12 @@ div.holder {
   height: auto;
 
   /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.050);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
 
   backdrop-filter: blur(5.1px);
   -webkit-backdrop-filter: blur(1px);
   border: 1px solid rgba(255, 255, 255, 0.02);
-
 
   border-radius: 1rem;
 }
@@ -161,21 +172,17 @@ div.holder {
 div.holder div:nth-child(2) {
   min-height: 230px;
   align-self: flex-start;
-
 }
 
 div.holder div:nth-child(3) {
   align-self: flex-end;
-
 }
-
 
 div.image-holder-projects {
   height: 150px;
 }
 
 div.image-holder-services {
-
   height: 200px;
 }
 
@@ -188,7 +195,6 @@ div.image-holder-services img {
 /* contact form styling */
 
 div.contact-box {
-
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -200,10 +206,9 @@ div.contact-box {
 
   overflow-x: auto;
   scroll-behavior: smooth;
-
 }
 
-div.contact-box>div {
+div.contact-box > div {
   margin: 1rem;
 }
 
@@ -222,7 +227,7 @@ form.form div:nth-child(4) {
 }
 
 div.contactForm {
-  background: rgba(255, 255, 255, 0.050);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
   padding: 1rem;
   backdrop-filter: blur(5.1px);
@@ -240,11 +245,10 @@ div.item {
 div.item input {
   width: 300px;
   align-items: center;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   border: none;
   border-radius: 16px;
   padding: 4px 9px;
-
 }
 
 div.item label {
@@ -253,7 +257,6 @@ div.item label {
   font-size: 18px;
 }
 
-
 textarea {
   height: 100px;
   width: 300px;
@@ -261,13 +264,11 @@ textarea {
   padding: 10px 14px;
   border: none;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-
 }
 
 div.item label::after {
   content: ":";
 }
-
 
 div.emailImageBox {
   height: 400px;
@@ -276,7 +277,6 @@ div.emailImageBox {
 div.emailImageBox img {
   height: 100%;
 }
-
 
 /* about page styles */
 div.aboutPhotoHolder {
@@ -297,7 +297,7 @@ div.aboutPhotoHolder img {
   transition: all 0.8s ease-in-out;
 }
 
-div.aboutPhotoHolder img:hover{
+div.aboutPhotoHolder img:hover {
   transform: scale(1.6);
 }
 
@@ -311,8 +311,8 @@ div.about {
   margin-bottom: 2rem;
 }
 
-div.about>div:nth-child(2) {
-  background: rgba(255, 255, 255, 0.050);
+div.about > div:nth-child(2) {
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
   padding: 1rem;
   backdrop-filter: blur(5.1px);
@@ -322,18 +322,22 @@ div.about>div:nth-child(2) {
   cursor: default;
 }
 
-@media screen and (max-width:1110px) {
+@media screen and (max-width: 1110px) {
   div.box section {
     grid-template-columns: repeat(2, 1fr);
-
   }
 }
 
-@media screen and (max-width:991px) {
-  footer {
-
+@media screen and (max-width: 991px) {
+  footer>div {
+    height: 30px;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  a.icon svg {
+    font-size: 1.3rem !important;
   }
 
   div.box section {
@@ -350,7 +354,6 @@ div.about>div:nth-child(2) {
   }
 
   div.contact-box {
-
     align-items: center;
     flex-direction: column;
     height: 100vh;
@@ -359,7 +362,6 @@ div.about>div:nth-child(2) {
   }
 
   div.emailImageBox {
-
     height: 250px;
   }
 
@@ -377,20 +379,37 @@ div.about>div:nth-child(2) {
   }
 
   div.about {
-
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 1rem 0;
   }
 
-  div.about>div {
-    margin: 1rem 0 ;
+  div.about > div {
+    margin: 1rem 0;
     min-height: 300px;
   }
 
   div.aboutPhotoHolder img {
     height: 270px;
-
   }
 }
+
+/* footer styles */
+
+a.icon {
+  margin: 0 0.2rem;
+  color: inherit;
+  color: #ccc;
+  transition: all 0.2s ease-in-out;
+}
+
+a.icon:hover {
+  font-size: 2.3rem;
+  color: #fff;
+}
+
+a.icon svg {
+  font-size: 1.7rem;
+}
+

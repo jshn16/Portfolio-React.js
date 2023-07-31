@@ -5,6 +5,7 @@ import taskAppImage from "../../assets/to-do-list.png";
 import NotesAppImage from "../../assets/notes.png";
 import greenGaugeAppImage from "../../assets/green-guage-logo.png";
 import carbaseAppImage from "../../assets/carbase-logo.png";
+import designAppImage from "../../assets/desiging.png";
 import { Link } from "react-router-dom";
 
 import ReactOriginal from "devicons-react/lib/icons/ReactOriginal";
@@ -18,6 +19,13 @@ import NodejsOriginal from "devicons-react/lib/icons/NodejsOriginal";
 
 import { ReactComponent as MongoDBIcon } from "../../assets/icons/mongodb.svg";
 import { ReactComponent as JsIcon } from "../../assets/icons/js.svg";
+
+import PhotoshopPlain from 'devicons-react/lib/icons/PhotoshopPlain';
+import IllustratorPlain from 'devicons-react/lib/icons/IllustratorPlain';
+import XdPlain from 'devicons-react/lib/icons/XdPlain';
+import FigmaPlain from 'devicons-react/lib/icons/FigmaPlain';
+
+
 
 function Project() {
   useEffect(() => {
@@ -44,6 +52,7 @@ function Project() {
             </p>
           </div>
           <div className="languages">
+          <div>
             {<Html5Icon />}
             {<Css3Icon />}
             {<JsIcon />}
@@ -57,6 +66,8 @@ function Project() {
               Case Study
             </a>
           </div>
+          </div>
+          
         </div>
 
         <div className="holder">
@@ -74,6 +85,7 @@ function Project() {
             </p>
           </div>
           <div className="languages">
+          <div>
             {<Html5Icon />}
             {<Css3Icon />}
             {<JsIcon />}
@@ -87,6 +99,8 @@ function Project() {
               Case Study
             </a>
           </div>
+          </div>
+          
         </div>
 
         <div className="holder">
@@ -103,6 +117,7 @@ function Project() {
             </p>
           </div>
           <div className="languages">
+          <div>
             {<Html5Icon />}
             {<Css3Icon />}
             {<JsIcon />}
@@ -117,6 +132,8 @@ function Project() {
               Case Study
             </a>
           </div>
+          </div>
+          
         </div>
 
         <div className="holder">
@@ -139,25 +156,28 @@ function Project() {
             </ul>
           </div>
           <div className="languages">
-           
-            {<Html5Icon />}
-            {<Css3Icon />}
-            {<JsIcon />}
-            {<ReactOriginal />}
-            {<NodejsOriginal />}
-            <HandlebarsOriginal/>
-            {<ExpressOriginal />}
-            {<MongoDBIcon />}
-          </div>
           <div>
-            <a
-              target="_blank"
-              href="https://greengauge.onrender.com/"
-              className="btn-common"
-            >
-              Case Study
-            </a>
+           
+           {<Html5Icon />}
+           {<Css3Icon />}
+           {<JsIcon />}
+           {<ReactOriginal />}
+           {<NodejsOriginal />}
+           <HandlebarsOriginal/>
+           {<ExpressOriginal />}
+           {<MongoDBIcon />}
+         </div>
+         <div>
+           <a
+             target="_blank"
+             href="https://greengauge.onrender.com/"
+             className="btn-common"
+           >
+             Case Study
+           </a>
+         </div>
           </div>
+          
         </div>
 
         <div className="holder">
@@ -184,6 +204,7 @@ function Project() {
             </ul>
           </div>
           <div className="languages">
+          <div>
           {<Html5Icon />}
             {<Css3Icon />}
             {<JsIcon />}
@@ -202,6 +223,48 @@ function Project() {
               Case Study
             </a>
           </div>
+          </div>
+          
+        </div>
+
+        <div className="holder">
+          <div className="image-holder-projects">
+            <img src={designAppImage} />
+          </div>
+          <div>
+            <h5>Desiging Projects</h5>
+            <p>
+              Designed and Developed mockups, wireframes, UI and UX designs for web applications. Using Adobe Photoshop, Illustrator and Figma  
+            </p>
+
+            <ul>
+            <li>Designed homepage wireframes for cafe website</li>
+              <li>Designed logos for cafe, motorcycle, and community centre website.</li>
+              <li>Designed Facebook and Skype Login pages.</li>
+              <li>Designed Full website homepage design.</li>
+              <li>Developed UX/UI design for mobile applications.</li>
+              <li>Developed brochure design for comapny.</li>
+            </ul>
+          </div>
+
+          <div className="languages">
+          <div >
+            {<PhotoshopPlain />}
+            {<IllustratorPlain />}
+            {<XdPlain />}
+            {<FigmaPlain />}
+          </div>
+          <div>
+            <a
+              target="_blank"
+              href="Link: https://shorturl.at/ituUZ"
+              className="btn-common"
+            >
+              Case Study
+            </a>
+          </div>
+          </div>
+          
         </div>
       </section>
     </div>

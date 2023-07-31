@@ -190,8 +190,9 @@ div.holder {
   border-radius: 1rem;
 }
 
-div.holder div:nth-child(2) {
+div.holder>div:nth-child(2) {
   min-height: 230px;
+  height: auto;
   align-self: flex-start;
 }
 
@@ -218,6 +219,9 @@ div.holder div:nth-child(3) svg :hover{
 }
 
 div.holder div:nth-child(4) {
+  margin-bottom: 1rem;
+  position: fixed;
+  bottom: 0;
   align-self: flex-end;
 }
 
@@ -266,6 +270,7 @@ form.form div:nth-child(3) {
 }
 
 form.form div:nth-child(4) {
+  
   align-self: flex-end;
 }
 
@@ -365,7 +370,7 @@ div.about > div:nth-child(2) {
   cursor: default;
 }
 
-@media screen and (max-width: 1110px) {
+@media screen and (max-width: 1366px) {
   div.box section.wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -444,7 +449,21 @@ div.about > div:nth-child(2) {
   }
 
   div.languages{
-    min-height: 45px;
+    flex-direction: column;
+    height: auto !important;
+    align-items: center !important;
+    justify-content: center;
+  }
+
+  div.languages>div:nth-child(1){
+    padding: 1rem 0.2rem;
+    flex-grow: 0 !important;
+  }
+
+
+
+  div.image-holder-projects{
+    align-self: center;
   }
 }
 
@@ -465,4 +484,19 @@ a.icon:hover {
 a.icon svg {
   filter: drop-shadow(1px 2px 2px #000);
   font-size: 1.7rem;
+}
+
+div.languages{
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  
+  align-items: flex-end;
+  justify-content: center;
+  
+}
+
+div.languages>div:nth-child(1){
+  flex-grow: 1;
 }

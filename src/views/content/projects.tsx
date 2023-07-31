@@ -6,6 +6,19 @@ import NotesAppImage from "../../assets/notes.png";
 import greenGaugeAppImage from "../../assets/green-guage-logo.png";
 import carbaseAppImage from "../../assets/carbase-logo.png";
 import { Link } from "react-router-dom";
+
+import ReactOriginal from "devicons-react/lib/icons/ReactOriginal";
+
+import { ReactComponent as Css3Icon } from "../../assets/icons/css3.svg";
+import { ReactComponent as Html5Icon } from "../../assets/icons/html5.svg";
+import ExpressOriginal from "devicons-react/lib/icons/ExpressOriginal";
+import HandlebarsOriginal from 'devicons-react/lib/icons/HandlebarsOriginal';
+
+import NodejsOriginal from "devicons-react/lib/icons/NodejsOriginal";
+
+import { ReactComponent as MongoDBIcon } from "../../assets/icons/mongodb.svg";
+import { ReactComponent as JsIcon } from "../../assets/icons/js.svg";
+
 function Project() {
   useEffect(() => {
     document.title = "Projects";
@@ -29,6 +42,11 @@ function Project() {
               popular weather forecasting website. The JSON data is then parsed
               into respected values.
             </p>
+          </div>
+          <div className="languages">
+            {<Html5Icon />}
+            {<Css3Icon />}
+            {<JsIcon />}
           </div>
           <div>
             <a
@@ -55,7 +73,11 @@ function Project() {
               edit or delete tasks upon their requirements.
             </p>
           </div>
-
+          <div className="languages">
+            {<Html5Icon />}
+            {<Css3Icon />}
+            {<JsIcon />}
+          </div>
           <div>
             <a
               target="_blank"
@@ -79,6 +101,12 @@ function Project() {
               utilizing the localStorage of browser. Perfect tool to help
               organize your thoughts and ease your mind.
             </p>
+          </div>
+          <div className="languages">
+            {<Html5Icon />}
+            {<Css3Icon />}
+            {<JsIcon />}
+            {<ReactOriginal />}
           </div>
           <div>
             <a
@@ -109,6 +137,17 @@ function Project() {
 
               <li>Much more..</li>
             </ul>
+          </div>
+          <div className="languages">
+           
+            {<Html5Icon />}
+            {<Css3Icon />}
+            {<JsIcon />}
+            {<ReactOriginal />}
+            {<NodejsOriginal />}
+            <HandlebarsOriginal/>
+            {<ExpressOriginal />}
+            {<MongoDBIcon />}
           </div>
           <div>
             <a
@@ -144,7 +183,16 @@ function Project() {
               <li>Interact with databases through RESTful APIs</li>
             </ul>
           </div>
-
+          <div className="languages">
+          {<Html5Icon />}
+            {<Css3Icon />}
+            {<JsIcon />}
+            {<ReactOriginal />}
+            {<NodejsOriginal />}
+            <HandlebarsOriginal/>
+            {<ExpressOriginal />}
+            {<MongoDBIcon />}
+          </div>
           <div>
             <a
               target="_blank"

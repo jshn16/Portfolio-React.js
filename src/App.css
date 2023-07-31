@@ -6,8 +6,7 @@
   box-sizing: border-box;
 }
 
-:root {
-}
+
 
 .bold {
   font-weight: 900;
@@ -62,11 +61,11 @@ nav a.bold {
   font-size: 1.5rem;
 }
 
-a.navbar-brand{
+a.navbar-brand {
   height: 50px;
 }
 
-a.navbar-brand img{
+a.navbar-brand img {
   filter: drop-shadow(2px 2px 2px #000);
   height: 100%;
 }
@@ -109,7 +108,6 @@ div.box {
   border-radius: 0.5rem;
 }
 
-
 footer {
   padding: 0.5rem;
   position: fixed;
@@ -138,8 +136,22 @@ footer span {
   font-size: 0.8rem;
 }
 
-
 /* home page styles */
+section.home-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+section.home-box>div:nth-child(2){
+  
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 1rem;
+  backdrop-filter: blur(5.1px);
+  -webkit-backdrop-filter: blur(1px);
+  border: 1px solid rgba(255, 255, 255, 0.02);
+  margin-bottom: 2rem;
+}
 
 div.box {
   padding: 2rem 2.5rem !important;
@@ -183,7 +195,29 @@ div.holder div:nth-child(2) {
   align-self: flex-start;
 }
 
-div.holder div:nth-child(3) {
+div.holder div:nth-child(3) svg {
+  
+  fill: #ccc !important;
+  width: 1.4rem !important;
+  height: 1.4rem !important;
+  margin: 0 0.2rem;
+  filter: drop-shadow(1px 2px 2px #000);
+ 
+}
+
+
+
+div.holder div:nth-child(3) svg g, path {
+  fill: #ccc !important;
+  
+ 
+}
+
+div.holder div:nth-child(3) svg :hover{
+  fill: #fff !important;
+}
+
+div.holder div:nth-child(4) {
   align-self: flex-end;
 }
 
@@ -338,7 +372,7 @@ div.about > div:nth-child(2) {
 }
 
 @media screen and (max-width: 991px) {
-  footer>div {
+  footer > div {
     height: 30px;
     flex-direction: column;
     align-items: center;
@@ -402,6 +436,16 @@ div.about > div:nth-child(2) {
   div.aboutPhotoHolder img {
     height: 270px;
   }
+
+  section.home-box>div:nth-child(3){
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  div.languages{
+    min-height: 45px;
+  }
 }
 
 /* footer styles */
@@ -419,6 +463,6 @@ a.icon:hover {
 }
 
 a.icon svg {
+  filter: drop-shadow(1px 2px 2px #000);
   font-size: 1.7rem;
 }
-

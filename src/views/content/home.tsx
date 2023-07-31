@@ -20,21 +20,21 @@ function Home() {
         <div className="box">
             <h1 className="bold">Home</h1>
             <hr />
-        <section className="">
-        <div>
-                <h2>Hi, My Name is Jashan</h2>
-            </div>
+            <section className="home-box">
+                <div>
+                    <h2>Hi, My Name is Jashan</h2>
+                </div>
 
-            <div>
-                <p>A Full Stack Developer with two years of professional experience, specializing in web development, project management, agile methodology, and quality assurance testing. Adept at coordinating effectively with development teams, clients, and non-technical stakeholders to execute complex web development projects.</p>
-            </div>
+                <div>
+                    <p>A Full Stack Developer with two years of professional experience, specializing in web development, project management, agile methodology, and quality assurance testing. Adept at coordinating effectively with development teams, clients, and non-technical stakeholders to execute complex web development projects.</p>
+                </div>
 
-            <div>
-                <Link to={'/about'} className="btn-common">Know More</Link>
-                <a className="btn-common" onClick={saveFile} >Download Resume</a>
-            </div>
-        </section>
-            
+                <div>
+                    <Link to={'/about'} className="btn-common">Know More</Link>
+                    <a className="btn-common" onClick={saveFile} >Download Resume</a>
+                </div>
+            </section>
+
         </div>
     );
 }

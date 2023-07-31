@@ -20,8 +20,8 @@ function Home() {
         <div className="box">
             <h1 className="bold">Home</h1>
             <hr />
-
-            <div>
+        <section className="">
+        <div>
                 <h2>Hi, My Name is Jashan</h2>
             </div>
 
@@ -33,6 +33,8 @@ function Home() {
                 <Link to={'/about'} className="btn-common">Know More</Link>
                 <a className="btn-common" onClick={saveFile} >Download Resume</a>
             </div>
+        </section>
+            
         </div>
     );
 }

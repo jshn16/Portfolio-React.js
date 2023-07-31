@@ -15,7 +15,7 @@ function Project() {
     <div className="box">
       <h1 className="bold">Projects</h1>
       <hr />
-      <section>
+      <section className="wrapper">
         <div className="holder">
           <div className="image-holder-projects">
             <img src={WeatherAppImage} />

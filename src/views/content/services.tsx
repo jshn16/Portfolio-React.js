@@ -16,7 +16,7 @@ function Services() {
         <div className="box">
             <h1 className="bold">Services</h1>
             <hr />
-            <section>
+            <section className="wrapper">
                 <div className="holder">
                     <div className="image-holder-services">
                         <img src={graphicDesiginingLogo} />

@@ -62,6 +62,15 @@ nav a.bold {
   font-size: 1.5rem;
 }
 
+a.navbar-brand{
+  height: 50px;
+}
+
+a.navbar-brand img{
+  filter: drop-shadow(2px 2px 2px #000);
+  height: 100%;
+}
+
 button.navbar-toggler {
   border: 4px #fff solid;
   border-radius: 2rem;
@@ -139,7 +148,7 @@ div.box {
   flex-direction: column;
 }
 
-div.box section {
+div.box section.wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
@@ -323,7 +332,7 @@ div.about > div:nth-child(2) {
 }
 
 @media screen and (max-width: 1110px) {
-  div.box section {
+  div.box section.wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -340,7 +349,7 @@ div.about > div:nth-child(2) {
     font-size: 1.3rem !important;
   }
 
-  div.box section {
+  div.box section.wrapper {
     grid-template-columns: repeat(1, 1fr);
     height: 100vh;
     padding: 1rem;

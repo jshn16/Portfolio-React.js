@@ -9,10 +9,10 @@ function Contact() {
     document.title = 'Contact'
 }, [])
 
-  const emailForm = useRef();
+  const emailForm:any = useRef();
 
   //using emailjs to recieve email.
-  function sendEmail(event) {
+  function sendEmail(event:any) {
     event.preventDefault();
 
     emailjs
@@ -45,7 +45,7 @@ function Contact() {
         </div>
         <div className="contactForm">
           <div id="formContainer">
-            <h2>Contact Us</h2>
+            <h2>Contact Me</h2>
             <hr />
             <form
               ref={emailForm}

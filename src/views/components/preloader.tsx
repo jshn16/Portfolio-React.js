@@ -1,17 +1,16 @@
 import React, { useEffect } from "react";
-import preLoaderCss from "./preloader.css";
+import "./preloader.css";
 import { preLoaderAnim } from "../../animations";
-import logo from '../../logo.svg'
+import logo from "../../logo.svg";
 import { Navigate, useNavigate } from "react-router-dom";
 
 function PreLoader() {
   const navigate = useNavigate();
   useEffect(() => {
     preLoaderAnim();
-    setTimeout(()=>{
-        navigate('/home') 
-    }, 3000)
-   
+    setTimeout(() => {
+      navigate("/home");
+    }, 7000);
   }, []);
 
   return (

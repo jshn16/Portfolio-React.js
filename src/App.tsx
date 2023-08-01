@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 
-import { HashRouter,BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, BrowserRouter, Routes, Route } from "react-router-dom";
 
 //Components
 import Header from "./views/components/header";
@@ -14,23 +14,22 @@ import Footer from "./views/components/footer";
 import Home from "./views/content/home";
 import Projects from "./views/content/projects";
 import Services from "./views/content/services";
-import Contact from './views/content/contact'
-import About from './views/content/about'
+import Contact from "./views/content/contact";
+import About from "./views/content/about";
 import PreLoader from "./views/components/preloader";
 
 function App() {
-
   // disabled in production mode.
 
-  useEffect(() => {
-    const handleContextmenu = (event: any) => {
-      event.preventDefault();
-    };
-    document.addEventListener("contextmenu", handleContextmenu);
-    return function cleanup() {
-      document.removeEventListener("contextmenu", handleContextmenu);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const handleContextmenu = (event: any) => {
+  //     event.preventDefault();
+  //   };
+  //   document.addEventListener("contextmenu", handleContextmenu);
+  //   return function cleanup() {
+  //     document.removeEventListener("contextmenu", handleContextmenu);
+  //   };
+  // }, []);
 
   return (
     <div className="App">
@@ -39,6 +38,7 @@ function App() {
         <Routes>
           <Route path="/" element={<PreLoader />} />
         </Routes>
+
         <Routes>
           <Route path="/home" element={<Home />} />
         </Routes>

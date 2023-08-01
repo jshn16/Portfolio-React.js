@@ -54,11 +54,11 @@ function Contact() {
               onSubmit={sendEmail}
             >
               <div className="item" id="item-1">
-                <label id="fName">Name</label>
+                <label >Name</label>
                 <input
                   type="text"
                   name="user_name"
-                  id="fName"
+                 
                   placeholder="Name"
                   required
                 />
@@ -70,11 +70,11 @@ function Contact() {
                             </div> */}
 
               <div className="item" id="item-3">
-                <label id="email">Email</label>
+                <label>Email</label>
                 <input
                   type="email"
                   name="user_email"
-                  id="email"
+                
                   placeholder="Email"
                   required
                 />
@@ -88,7 +88,7 @@ function Contact() {
               <div className="item" id="item-5">
                 <label htmlFor="textarea">Message</label>
                 <textarea
-                  id="textarea"
+                 
                   name="message"
                   placeholder="Message"
                   required

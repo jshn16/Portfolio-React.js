@@ -257,7 +257,7 @@ function Project() {
           <div>
             <a
               target="_blank"
-              href="https://shorturl.at/ituUZ"
+              href="https://drive.google.com/drive/folders/1CbVA66ObcFFhx16wtI2rK5MYWp3qaNUU?usp=sharing"
               className="btn-common"
             >
               Case Study

@@ -16,6 +16,7 @@ import Projects from "./views/content/projects";
 import Services from "./views/content/services";
 import Contact from './views/content/contact'
 import About from './views/content/about'
+import PreLoader from "./views/components/preloader";
 
 function App() {
 
@@ -36,7 +37,7 @@ function App() {
       <HashRouter>
         <Header></Header>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<PreLoader />} />
         </Routes>
         <Routes>
           <Route path="/home" element={<Home />} />

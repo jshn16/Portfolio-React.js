@@ -26,7 +26,7 @@ function Home() {
                 </div>
 
                 <div>
-                    <p>A Full Stack Developer with two years of professional experience, specializing in <span>web development, web designing, ux/ui desiginig, project management, agile methodology, and quality assurance testing </span>. Adept at coordinating effectively with development teams, clients, and non-technical stakeholders to execute complex web development projects.</p>
+                    <p>A Full Stack Developer with two years of professional experience, specializing in <span>web development, web designing, UX/UI desiginig, project management, agile methodology, and quality assurance testing </span>. Adept at coordinating effectively with development teams, clients, and non-technical stakeholders to execute complex web development projects.</p>
                 </div>
 
                 <div>

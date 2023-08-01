@@ -238,12 +238,12 @@ function Project() {
             </p>
 
             <ul>
-            <li>Designed homepage wireframes for cafe website</li>
-              <li>Designed logos for cafe, motorcycle, and community centre website.</li>
+            <li>Designed homepage wireframes for the cafe website</li>
+              <li>Designed logos for cafe, motorcycle, and community centre websites.</li>
               <li>Designed Facebook and Skype Login pages.</li>
-              <li>Designed Full website homepage design.</li>
+              <li>Designed full website homepage design.</li>
               <li>Developed UX/UI design for mobile applications.</li>
-              <li>Developed brochure design for comapny.</li>
+              <li>Developed brochure design for the company.</li>
             </ul>
           </div>
 

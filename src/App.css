@@ -5,6 +5,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  user-select: none !important;
 }
 
 .bold {
@@ -46,7 +47,6 @@ li {
 header nav a,
 footer {
   font-family: "Raleway", sans-serif !important;
-
   font-weight: 500;
 }
 
@@ -64,7 +64,13 @@ a.navbar-brand {
   height: 50px;
 }
 
+a.navbar-brand img:hover {
+
+  height: 110%;
+}
+
 a.navbar-brand img {
+  transition: all 0.2s linear;
   filter: drop-shadow(2px 2px 2px #000);
   height: 100%;
 }
@@ -97,7 +103,7 @@ div.box {
   /* background-color: #52c234; */
   background: linear-gradient(120deg, #bccaf8dd, #e2e2e2);
   color: #000;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
   background-size: 200%;
 }
 
@@ -115,7 +121,7 @@ footer {
   width: 100%;
 }
 
-footer > div {
+footer>div {
   padding: 1rem 0;
   height: 30px;
   display: flex;
@@ -123,7 +129,7 @@ footer > div {
   justify-content: center;
 }
 
-footer > div > div:nth-child(1) {
+footer>div>div:nth-child(1) {
   flex-grow: 1;
 }
 
@@ -142,7 +148,7 @@ section.home-box {
   justify-content: space-evenly;
 }
 
-section.home-box > div:nth-child(2) {
+section.home-box>div:nth-child(2) {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
   padding: 1rem;
@@ -182,14 +188,16 @@ div.holder {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
 
-  backdrop-filter: blur(5.1px);
+  backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(1px);
   border: 1px solid rgba(255, 255, 255, 0.02);
 
   border-radius: 1rem;
 }
 
-div.holder > div:nth-child(2) {
+
+
+div.holder>div:nth-child(2) {
   min-height: 230px;
   height: auto;
   align-self: flex-start;
@@ -249,7 +257,7 @@ div.contact-box {
   scroll-behavior: smooth;
 }
 
-div.contact-box > div {
+div.contact-box>div {
   margin: 1rem;
 }
 
@@ -352,7 +360,7 @@ div.about {
   margin-bottom: 2rem;
 }
 
-div.about > div:nth-child(2) {
+div.about>div:nth-child(2) {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
   padding: 1rem;
@@ -370,7 +378,7 @@ div.about > div:nth-child(2) {
 }
 
 @media screen and (max-width: 991px) {
-  footer > div {
+  footer>div {
     height: 30px;
     flex-direction: column;
     align-items: center;
@@ -426,7 +434,7 @@ div.about > div:nth-child(2) {
     padding: 1rem 0;
   }
 
-  div.about > div {
+  div.about>div {
     margin: 1rem 0;
     min-height: 300px;
   }
@@ -435,7 +443,7 @@ div.about > div:nth-child(2) {
     height: 270px;
   }
 
-  section.home-box > div:nth-child(3) {
+  section.home-box>div:nth-child(3) {
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -448,7 +456,7 @@ div.about > div:nth-child(2) {
     justify-content: center;
   }
 
-  div.languages > div:nth-child(1) {
+  div.languages>div:nth-child(1) {
     padding: 1rem 0.2rem;
     flex-grow: 0 !important;
   }
@@ -462,7 +470,7 @@ div.about > div:nth-child(2) {
 
 a.icon {
   margin: 0 0.2rem;
-  
+
   /* color: #ccc; */
   transition: all 0.2s ease-in-out;
 }
@@ -488,6 +496,6 @@ div.languages {
   justify-content: center;
 }
 
-div.languages > div:nth-child(1) {
+div.languages>div:nth-child(1) {
   flex-grow: 1;
 }

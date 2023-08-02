@@ -161,7 +161,7 @@ function Project() {
            {<Html5Icon />}
            {<Css3Icon />}
            {<JsIcon />}
-           {<ReactOriginal />}
+           
            {<NodejsOriginal />}
            <HandlebarsOriginal/>
            {<ExpressOriginal />}
@@ -208,7 +208,7 @@ function Project() {
           {<Html5Icon />}
             {<Css3Icon />}
             {<JsIcon />}
-            {<ReactOriginal />}
+          
             {<NodejsOriginal />}
             <HandlebarsOriginal/>
             {<ExpressOriginal />}

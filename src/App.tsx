@@ -17,25 +17,25 @@ import Services from "./views/content/services";
 import Contact from "./views/content/contact";
 import About from "./views/content/about";
 import PreLoader from "./views/components/preloader";
-import Error from "./views/components/error";
+
 
 
 function App() {
   // disabled in production mode.
 
-  // useEffect(() => {
-  //   const handleContextmenu = (event: any) => {
-  //     event.preventDefault();
-  //   };
-  //   document.addEventListener("contextmenu", handleContextmenu);
-  //   return function cleanup() {
-  //     document.removeEventListener("contextmenu", handleContextmenu);
-  //   };
-  // }, []);
+  useEffect(() => {
+    const handleContextmenu = (event: any) => {
+      event.preventDefault();
+    };
+    document.addEventListener("contextmenu", handleContextmenu);
+    return function cleanup() {
+      document.removeEventListener("contextmenu", handleContextmenu);
+    };
+  }, []);
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Header></Header>
         <Routes>
           <Route path="/" element={<PreLoader />} />
@@ -60,11 +60,10 @@ function App() {
           <Route path="/about" element={<About />} />
         </Routes>
 
-        <Routes>
-        <Route path="*" element={<Error/>}/>
-        </Routes>
+        
+        
         <Footer></Footer>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }

@@ -23,15 +23,15 @@ import PreLoader from "./views/components/preloader";
 function App() {
   // disabled in production mode.
 
-  useEffect(() => {
-    const handleContextmenu = (event: any) => {
-      event.preventDefault();
-    };
-    document.addEventListener("contextmenu", handleContextmenu);
-    return function cleanup() {
-      document.removeEventListener("contextmenu", handleContextmenu);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const handleContextmenu = (event: any) => {
+  //     event.preventDefault();
+  //   };
+  //   document.addEventListener("contextmenu", handleContextmenu);
+  //   return function cleanup() {
+  //     document.removeEventListener("contextmenu", handleContextmenu);
+  //   };
+  // }, []);
 
   return (
     <div className="App">

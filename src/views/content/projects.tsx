@@ -140,6 +140,7 @@ function Project() {
           <div className="image-holder-projects">
             <img src={greenGaugeAppImage} />
           </div>
+          
           <div>
             <h5>GreenGauge</h5>
             <p>

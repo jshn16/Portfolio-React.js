@@ -64,13 +64,13 @@ a.navbar-brand {
   height: 50px;
 }
 
-a.navbar-brand img:hover {
+a.navbar-brand img:hover, a.navbar-brand img:active, a.navbar-brand img:focus {
 
-  height: 110%;
+  height: 105%;
 }
 
 a.navbar-brand img {
-  transition: all 0.2s linear;
+  transition: all 0.1s linear;
   filter: drop-shadow(2px 2px 2px #000);
   height: 100%;
 }
@@ -239,6 +239,7 @@ div.image-holder-projects img,
 div.image-holder-services img {
   padding: 1rem;
   height: 100%;
+  
 }
 
 /* contact form styling */
@@ -378,6 +379,11 @@ div.about>div:nth-child(2) {
 }
 
 @media screen and (max-width: 991px) {
+
+  div.image-holder-services{
+    align-self: center;
+  }
+
   footer>div {
     height: 30px;
     flex-direction: column;

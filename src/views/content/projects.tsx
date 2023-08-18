@@ -1,31 +1,29 @@
 import React, { useEffect } from "react";
 
 import WeatherAppImage from "../../assets/weather-app.png";
-import taskAppImage from "../../assets/to-do-list.png";
+import tasklyAppImage from "../../assets/to-do-list.png";
 import NotesAppImage from "../../assets/notes.png";
 import greenGaugeAppImage from "../../assets/green-guage-logo.png";
 import carbaseAppImage from "../../assets/carbase-logo.png";
 import designAppImage from "../../assets/desiging.png";
 import { Link } from "react-router-dom";
-
+import {TiCloudStorage} from 'react-icons/ti'
 import ReactOriginal from "devicons-react/lib/icons/ReactOriginal";
 
 import { ReactComponent as Css3Icon } from "../../assets/icons/css3.svg";
 import { ReactComponent as Html5Icon } from "../../assets/icons/html5.svg";
 import ExpressOriginal from "devicons-react/lib/icons/ExpressOriginal";
-import HandlebarsOriginal from 'devicons-react/lib/icons/HandlebarsOriginal';
+import HandlebarsOriginal from "devicons-react/lib/icons/HandlebarsOriginal";
 
 import NodejsOriginal from "devicons-react/lib/icons/NodejsOriginal";
 
 import { ReactComponent as MongoDBIcon } from "../../assets/icons/mongodb.svg";
 import { ReactComponent as JsIcon } from "../../assets/icons/js.svg";
 
-import PhotoshopPlain from 'devicons-react/lib/icons/PhotoshopPlain';
-import IllustratorPlain from 'devicons-react/lib/icons/IllustratorPlain';
-import XdPlain from 'devicons-react/lib/icons/XdPlain';
-import FigmaPlain from 'devicons-react/lib/icons/FigmaPlain';
-
-
+import PhotoshopPlain from "devicons-react/lib/icons/PhotoshopPlain";
+import IllustratorPlain from "devicons-react/lib/icons/IllustratorPlain";
+import XdPlain from "devicons-react/lib/icons/XdPlain";
+import FigmaPlain from "devicons-react/lib/icons/FigmaPlain";
 
 function Project() {
   useEffect(() => {
@@ -52,55 +50,54 @@ function Project() {
             </p>
           </div>
           <div className="languages">
-          <div>
-            {<Html5Icon />}
-            {<Css3Icon />}
-            {<JsIcon />}
+            <div>
+              {<Html5Icon />}
+              {<Css3Icon />}
+              {<JsIcon />}
+             
+              
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://jshn16.github.io/weather-app/"
+                className="btn-common"
+              >
+                Case Study
+              </a>
+            </div>
           </div>
-          <div>
-            <a
-              target="_blank"
-              href="https://jshn16.github.io/weather-app/"
-              className="btn-common"
-            >
-              Case Study
-            </a>
-          </div>
-          </div>
-          
         </div>
 
         <div className="holder">
           <div className="image-holder-projects">
-            <img src={taskAppImage} alt="taskAppImage" />
+            <img src={tasklyAppImage} alt="taskAppImage" />
           </div>
 
           <div>
-            <h5>To-Do-List</h5>
+            <h5>Taskly</h5>
             <p>
-              Application designed using HTML5, CSS3, and JavaScript that
-              replicates the functioning of real life list of tasks you need to
-              complete or things that you want to do. Users are able to create,
-              edit or delete tasks upon their requirements.
+              Application designed using HTML5, CSS3, JavaScript, React.js and localStorage that replicates the functioning of real life list of tasks you need to complete or things that you want to do. Users are able to create, store, edit or delete tasks upon their requirements. Tasks are being stored in browser localStorage so that they remain active even after the browser window is closed.
             </p>
           </div>
           <div className="languages">
-          <div>
-            {<Html5Icon />}
-            {<Css3Icon />}
-            {<JsIcon />}
+            <div>
+              {<Html5Icon />}
+              {<Css3Icon />}
+              {<JsIcon />}
+              {<ReactOriginal />}
+              {<TiCloudStorage/>}
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://taskly-2gi7.onrender.com"
+                className="btn-common"
+              >
+                Case Study
+              </a>
+            </div>
           </div>
-          <div>
-            <a
-              target="_blank"
-              href="https://jshn16.github.io/to-do-list-js/"
-              className="btn-common"
-            >
-              Case Study
-            </a>
-          </div>
-          </div>
-          
         </div>
 
         <div className="holder">
@@ -113,34 +110,34 @@ function Project() {
               Notely is a notes taking application that utilizes React.js
               framework. Users are able to store, edit or delete notes by
               utilizing the localStorage of browser. Perfect tool to help
-              organize your thoughts and ease your mind.
+              organize your thoughts and ease your mind. Notes are being stored in browser localStorage so that they remain active even after the browser window is closed.
             </p>
           </div>
           <div className="languages">
-          <div>
-            {<Html5Icon />}
-            {<Css3Icon />}
-            {<JsIcon />}
-            {<ReactOriginal />}
+            <div>
+              {<Html5Icon />}
+              {<Css3Icon />}
+              {<JsIcon />}
+              {<ReactOriginal />}
+              {<TiCloudStorage/>}
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://notely-5bnr.onrender.com/"
+                className="btn-common"
+              >
+                Case Study
+              </a>
+            </div>
           </div>
-          <div>
-            <a
-              target="_blank"
-              href="https://notely-5bnr.onrender.com/"
-              className="btn-common"
-            >
-              Case Study
-            </a>
-          </div>
-          </div>
-          
         </div>
 
         <div className="holder">
           <div className="image-holder-projects">
             <img src={greenGaugeAppImage} />
           </div>
-          
+
           <div>
             <h5>GreenGauge</h5>
             <p>
@@ -157,28 +154,26 @@ function Project() {
             </ul>
           </div>
           <div className="languages">
-          <div>
-           
-           {<Html5Icon />}
-           {<Css3Icon />}
-           {<JsIcon />}
-           
-           {<NodejsOriginal />}
-           <HandlebarsOriginal/>
-           {<ExpressOriginal />}
-           {<MongoDBIcon />}
-         </div>
-         <div>
-           <a
-             target="_blank"
-             href="https://greengauge.onrender.com/"
-             className="btn-common"
-           >
-             Case Study
-           </a>
-         </div>
+            <div>
+              {<Html5Icon />}
+              {<Css3Icon />}
+              {<JsIcon />}
+
+              {<NodejsOriginal />}
+              <HandlebarsOriginal />
+              {<ExpressOriginal />}
+              {<MongoDBIcon />}
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://greengauge.onrender.com/"
+                className="btn-common"
+              >
+                Case Study
+              </a>
+            </div>
           </div>
-          
         </div>
 
         <div className="holder">
@@ -205,27 +200,26 @@ function Project() {
             </ul>
           </div>
           <div className="languages">
-          <div>
-          {<Html5Icon />}
-            {<Css3Icon />}
-            {<JsIcon />}
-          
-            {<NodejsOriginal />}
-            <HandlebarsOriginal/>
-            {<ExpressOriginal />}
-            {<MongoDBIcon />}
+            <div>
+              {<Html5Icon />}
+              {<Css3Icon />}
+              {<JsIcon />}
+
+              {<NodejsOriginal />}
+              <HandlebarsOriginal />
+              {<ExpressOriginal />}
+              {<MongoDBIcon />}
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://carbase-comp2106.onrender.com"
+                className="btn-common"
+              >
+                Case Study
+              </a>
+            </div>
           </div>
-          <div>
-            <a
-              target="_blank"
-              href="https://carbase-comp2106.onrender.com"
-              className="btn-common"
-            >
-              Case Study
-            </a>
-          </div>
-          </div>
-          
         </div>
 
         <div className="holder">
@@ -235,12 +229,16 @@ function Project() {
           <div>
             <h5>Desiging Projects</h5>
             <p>
-              Designed and Developed mockups, wireframes, UI and UX designs for web applications. Using Adobe Photoshop, Illustrator and Figma  
+              Designed and Developed mockups, wireframes, UI and UX designs for
+              web applications. Using Adobe Photoshop, Illustrator and Figma
             </p>
 
             <ul>
-            <li>Designed homepage wireframes for the cafe website</li>
-              <li>Designed logos for cafe, motorcycle, and community centre websites.</li>
+              <li>Designed homepage wireframes for the cafe website</li>
+              <li>
+                Designed logos for cafe, motorcycle, and community centre
+                websites.
+              </li>
               <li>Designed Facebook and Skype Login pages.</li>
               <li>Designed full website homepage design.</li>
               <li>Developed UX/UI design for mobile applications.</li>
@@ -249,23 +247,22 @@ function Project() {
           </div>
 
           <div className="languages">
-          <div >
-            {<PhotoshopPlain />}
-            {<IllustratorPlain />}
-            {<XdPlain />}
-            {<FigmaPlain />}
+            <div>
+              {<PhotoshopPlain />}
+              {<IllustratorPlain />}
+              {<XdPlain />}
+              {<FigmaPlain />}
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://drive.google.com/drive/folders/1CbVA66ObcFFhx16wtI2rK5MYWp3qaNUU?usp=sharing"
+                className="btn-common"
+              >
+                Case Study
+              </a>
+            </div>
           </div>
-          <div>
-            <a
-              target="_blank"
-              href="https://drive.google.com/drive/folders/1CbVA66ObcFFhx16wtI2rK5MYWp3qaNUU?usp=sharing"
-              className="btn-common"
-            >
-              Case Study
-            </a>
-          </div>
-          </div>
-          
         </div>
       </section>
     </div>

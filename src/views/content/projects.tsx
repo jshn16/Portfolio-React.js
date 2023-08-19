@@ -1,29 +1,27 @@
 import React, { useEffect } from "react";
 
+
+//App Icons
 import WeatherAppImage from "../../assets/weather-app.png";
 import tasklyAppImage from "../../assets/to-do-list.png";
 import NotesAppImage from "../../assets/notes.png";
 import greenGaugeAppImage from "../../assets/green-guage-logo.png";
 import carbaseAppImage from "../../assets/carbase-logo.png";
 import designAppImage from "../../assets/desiging.png";
-import { Link } from "react-router-dom";
 import {TiCloudStorage} from 'react-icons/ti'
 import ReactOriginal from "devicons-react/lib/icons/ReactOriginal";
-
 import { ReactComponent as Css3Icon } from "../../assets/icons/css3.svg";
 import { ReactComponent as Html5Icon } from "../../assets/icons/html5.svg";
 import ExpressOriginal from "devicons-react/lib/icons/ExpressOriginal";
 import HandlebarsOriginal from "devicons-react/lib/icons/HandlebarsOriginal";
-
 import NodejsOriginal from "devicons-react/lib/icons/NodejsOriginal";
-
 import { ReactComponent as MongoDBIcon } from "../../assets/icons/mongodb.svg";
 import { ReactComponent as JsIcon } from "../../assets/icons/js.svg";
-
 import PhotoshopPlain from "devicons-react/lib/icons/PhotoshopPlain";
 import IllustratorPlain from "devicons-react/lib/icons/IllustratorPlain";
 import XdPlain from "devicons-react/lib/icons/XdPlain";
 import FigmaPlain from "devicons-react/lib/icons/FigmaPlain";
+import {FaBootstrap} from 'react-icons/fa'
 
 function Project() {
   useEffect(() => {
@@ -37,7 +35,7 @@ function Project() {
       <section className="wrapper">
         <div className="holder">
           <div className="image-holder-projects">
-            <img src={WeatherAppImage} />
+            <img alt="appIcon"src={WeatherAppImage} />
           </div>
           <div>
             <h5>Season Sure</h5>
@@ -71,7 +69,7 @@ function Project() {
 
         <div className="holder">
           <div className="image-holder-projects">
-            <img src={tasklyAppImage} alt="taskAppImage" />
+            <img src={tasklyAppImage} alt="appIcon" />
           </div>
 
           <div>
@@ -102,7 +100,7 @@ function Project() {
 
         <div className="holder">
           <div className="image-holder-projects">
-            <img src={NotesAppImage} />
+            <img src={NotesAppImage} alt="appIcon" />
           </div>
           <div>
             <h5>Notely</h5>
@@ -120,6 +118,7 @@ function Project() {
               {<JsIcon />}
               {<ReactOriginal />}
               {<TiCloudStorage/>}
+              {<FaBootstrap/>}
             </div>
             <div>
               <a
@@ -135,7 +134,7 @@ function Project() {
 
         <div className="holder">
           <div className="image-holder-projects">
-            <img src={greenGaugeAppImage} />
+            <img src={greenGaugeAppImage} alt="appIcon" />
           </div>
 
           <div>
@@ -158,7 +157,7 @@ function Project() {
               {<Html5Icon />}
               {<Css3Icon />}
               {<JsIcon />}
-
+              {<FaBootstrap/>}
               {<NodejsOriginal />}
               <HandlebarsOriginal />
               {<ExpressOriginal />}
@@ -178,24 +177,19 @@ function Project() {
 
         <div className="holder">
           <div className="image-holder-projects">
-            <img src={carbaseAppImage} />
+            <img src={carbaseAppImage} alt="appIcon"/>
             {/* <a href="https://www.flaticon.com/free-icons/car-service" title="car service icons">Car service icons created by wanicon - Flaticon</a> */}
           </div>
 
           <div>
             <h5>Carbase</h5>
             <p>
-              Developed a web application for a car service company, that can
-              used for save clinets and their vehicle information in records.
-              Highly useful for managing huge client base. Developed with use of
-              Node.js, Express.JS, Mongo DB, and JavaScript.
+              Developed a web application for a car service company, that can used for save clinets and their vehicle information in records. Highly useful for managing huge client base. Developed with use of Node.js, Express.JS, Mongo DB, and JavaScript.
             </p>
             <ul>
               <li>Used to perform CRUD operations on data.</li>
               <li>Create, manage, delete, and store users.</li>
-
               <li>Use Google and Facebook authentication.</li>
-
               <li>Interact with databases through RESTful APIs</li>
             </ul>
           </div>
@@ -204,7 +198,7 @@ function Project() {
               {<Html5Icon />}
               {<Css3Icon />}
               {<JsIcon />}
-
+              {<FaBootstrap />}
               {<NodejsOriginal />}
               <HandlebarsOriginal />
               {<ExpressOriginal />}
@@ -224,7 +218,7 @@ function Project() {
 
         <div className="holder">
           <div className="image-holder-projects">
-            <img src={designAppImage} />
+            <img src={designAppImage} alt="appIcon" />
           </div>
           <div>
             <h5>Desiging Projects</h5>

@@ -227,17 +227,15 @@ div.holder div:nth-child(4) {
   align-self: flex-end;
 }
 
-div.image-holder-projects {
-  height: 150px;
-}
 
-div.image-holder-services {
+
+div.image-holder-services, div.image-holder-projects {
   height: 200px;
 }
 
 div.image-holder-projects img,
 div.image-holder-services img {
-  padding: 1rem;
+  padding: 0.5rem;
   height: 100%;
   
 }
@@ -382,6 +380,10 @@ div.about>div:nth-child(2) {
 
   div.image-holder-services{
     align-self: center;
+  }
+
+  div.image-holder-services, div.image-holder-projects {
+    height: 150px;
   }
 
   footer>div {

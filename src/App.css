@@ -152,8 +152,9 @@ section.home-box>div:nth-child(2) {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
   padding: 1rem;
-  backdrop-filter: blur(5.1px);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.02);
   margin-bottom: 2rem;
 }
@@ -167,7 +168,7 @@ div.box {
 
 div.box section.wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
   padding: 2rem 1rem;
   overflow-x: auto;
@@ -188,8 +189,7 @@ div.holder {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
 
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(1px);
+
   border: 1px solid rgba(255, 255, 255, 0.02);
 
   border-radius: 1rem;
@@ -278,8 +278,9 @@ div.contactForm {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
   padding: 1rem;
-  backdrop-filter: blur(5.1px);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.02);
 
   /* justify-content: space-around; */
@@ -363,8 +364,9 @@ div.about>div:nth-child(2) {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
   padding: 1rem;
-  backdrop-filter: blur(5.1px);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.02);
   overflow: auto;
   cursor: default;
@@ -506,4 +508,19 @@ div.languages {
 
 div.languages>div:nth-child(1) {
   flex-grow: 1;
+}
+
+ul.highlights {
+  margin-top: 0.5rem;
+}
+
+ul.highlights li{
+
+  font-family: 'Raleway',sans-serif;
+  font-weight: 400;
+  color: #bfbfbf;
+}
+
+ul.highlights li::first-letter{
+  text-transform: capitalize;
 }

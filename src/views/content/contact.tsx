@@ -41,7 +41,7 @@ function Contact() {
       <hr />
       <div className="contact-box">
         <div className="emailImageBox">
-          <img alt="emailLogo" src={emailLogo}></img>
+          <img title="Contact Me" alt="emailLogo" src={emailLogo}></img>
         </div>
         <div className="contactForm">
           <div id="formContainer">

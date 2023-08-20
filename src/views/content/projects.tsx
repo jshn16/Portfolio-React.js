@@ -35,7 +35,7 @@ function Project() {
       <section className="wrapper">
         <div className="holder">
           <div className="image-holder-projects">
-            <img alt="appIcon"src={WeatherAppImage} />
+            <img title="Season Sure" alt="appIcon"src={WeatherAppImage} />
           </div>
           <div>
             <h5>Season Sure</h5>
@@ -58,6 +58,7 @@ function Project() {
             <div>
               <a
                 target="_blank"
+                rel="noreferrer"
                 href="https://jshn16.github.io/weather-app/"
                 className="btn-common"
               >
@@ -69,7 +70,7 @@ function Project() {
 
         <div className="holder">
           <div className="image-holder-projects">
-            <img src={tasklyAppImage} alt="appIcon" />
+            <img title="Taskly" src={tasklyAppImage} alt="appIcon" />
           </div>
 
           <div>
@@ -89,6 +90,7 @@ function Project() {
             <div>
               <a
                 target="_blank"
+                rel="noreferrer"
                 href="https://taskly-2gi7.onrender.com"
                 className="btn-common"
               >
@@ -100,7 +102,7 @@ function Project() {
 
         <div className="holder">
           <div className="image-holder-projects">
-            <img src={NotesAppImage} alt="appIcon" />
+            <img title="Notely" src={NotesAppImage} alt="appIcon" />
           </div>
           <div>
             <h5>Notely</h5>
@@ -123,6 +125,7 @@ function Project() {
             <div>
               <a
                 target="_blank"
+                rel="noreferrer"
                 href="https://notely-5bnr.onrender.com/"
                 className="btn-common"
               >
@@ -134,7 +137,7 @@ function Project() {
 
         <div className="holder">
           <div className="image-holder-projects">
-            <img src={greenGaugeAppImage} alt="appIcon" />
+            <img title="GreenGauge" src={greenGaugeAppImage} alt="appIcon" />
           </div>
 
           <div>
@@ -166,6 +169,7 @@ function Project() {
             <div>
               <a
                 target="_blank"
+                rel="noreferrer"
                 href="https://greengauge.onrender.com/"
                 className="btn-common"
               >
@@ -177,7 +181,7 @@ function Project() {
 
         <div className="holder">
           <div className="image-holder-projects">
-            <img src={carbaseAppImage} alt="appIcon"/>
+            <img title="Carbase" src={carbaseAppImage} alt="appIcon"/>
             {/* <a href="https://www.flaticon.com/free-icons/car-service" title="car service icons">Car service icons created by wanicon - Flaticon</a> */}
           </div>
 
@@ -207,6 +211,7 @@ function Project() {
             <div>
               <a
                 target="_blank"
+                rel="noreferrer"
                 href="https://carbase-comp2106.onrender.com"
                 className="btn-common"
               >
@@ -218,7 +223,7 @@ function Project() {
 
         <div className="holder">
           <div className="image-holder-projects">
-            <img src={designAppImage} alt="appIcon" />
+            <img title="Desiging Projects" src={designAppImage} alt="appIcon" />
           </div>
           <div>
             <h5>Desiging Projects</h5>
@@ -250,6 +255,7 @@ function Project() {
             <div>
               <a
                 target="_blank"
+                rel="noreferrer"
                 href="https://drive.google.com/drive/folders/1CbVA66ObcFFhx16wtI2rK5MYWp3qaNUU?usp=sharing"
                 className="btn-common"
               >

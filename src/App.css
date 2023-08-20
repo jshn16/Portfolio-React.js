@@ -101,8 +101,10 @@ div.box {
   outline: none;
   border-radius: 2rem;
   /* background-color: #52c234; */
-  background: linear-gradient(120deg, #bccaf8dd, #e2e2e2);
-  color: #000;
+  background: linear-gradient(120deg, #0f9b0f
+  ,
+  #0c690c);
+  color: #fff;
   transition: all 0.4s ease-in-out;
   background-size: 200%;
 }
@@ -149,7 +151,7 @@ section.home-box {
 }
 
 section.home-box>div:nth-child(2) {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.02);
   border-radius: 16px;
   padding: 1rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -185,14 +187,10 @@ div.holder {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   height: auto;
 
-  /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 16px;
-
-
+  background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.02);
-
   border-radius: 1rem;
+  backdrop-filter: blur(10px);
 }
 
 
@@ -275,11 +273,13 @@ form.form div:nth-child(4) {
 }
 
 div.contactForm {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.02);
   border-radius: 16px;
   padding: 1rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   -webkit-backdrop-filter: blur(1px);
+
+  
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.02);
 
@@ -361,7 +361,7 @@ div.about {
 }
 
 div.about>div:nth-child(2) {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.02);
   border-radius: 16px;
   padding: 1rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;

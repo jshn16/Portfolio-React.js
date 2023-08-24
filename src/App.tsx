@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useEffect } from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -18,8 +18,6 @@ import Contact from "./views/content/contact";
 import About from "./views/content/about";
 import PreLoader from "./views/components/preloader";
 
-
-
 function App() {
   // disabled in production mode.
 
@@ -33,13 +31,14 @@ function App() {
   //   };
   // }, []);
 
+  let[menuState, setMenuState]=useState(false)
+
   return (
     <div className="App">
       <HashRouter>
         <Header></Header>
         <Routes>
           <Route path="/" element={<PreLoader />} />
-          
         </Routes>
 
         <Routes>
@@ -60,10 +59,26 @@ function App() {
           <Route path="/about" element={<About />} />
         </Routes>
 
-        
-        
         <Footer></Footer>
       </HashRouter>
+
+      <div className="dropdown" onClick={()=>{setMenuState(!menuState)}}>
+        <div className="menuTrigger" >
+         
+          <a >
+            <img src="https://s2.svgbox.net/materialui.svg?color=fff&ic=people_alt" alt="" />Hire Me!
+          </a>
+        </div>
+        <div className={`menuItems ${menuState? "activeMenu":"inactiveMenu"}`}>
+          <a href="tel:6479946544">
+            <img src="https://s2.svgbox.net/materialui.svg?color=fff&ic=phone" alt="dropdown"/>
+          </a>
+          <a  href="mailto:jashannoor2001@gmail.com">
+            <img src="https://s2.svgbox.net/materialui.svg?color=fff&ic=mail" alt="dropdown"/>
+          </a>
+         
+        </div>
+      </div>
     </div>
   );
 }

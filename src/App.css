@@ -329,7 +329,6 @@ div.aboutPhotoHolder {
   justify-content: center;
   height: 350px;
   width: 500px;
-  
 }
 
 div.aboutPhotoHolder img {
@@ -341,7 +340,6 @@ div.aboutPhotoHolder img {
   transform: scale(1.5);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transition: all 0.8s ease-in-out;
-  
 }
 
 div.aboutPhotoHolder img:hover {
@@ -350,7 +348,7 @@ div.aboutPhotoHolder img:hover {
 
 div.about {
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   /* height: 100vh; */
   overflow: auto;
@@ -369,7 +367,6 @@ div.about > div:nth-child(2) {
   overflow: auto;
   cursor: default;
   width: 500px;
-  
 }
 
 @media screen and (max-width: 1366px) {
@@ -446,12 +443,11 @@ div.about > div:nth-child(2) {
 
   div.about > div:nth-child(1) {
     margin: 2rem 0;
-   
+
     width: 300px;
-   
   }
 
-  div.about > div:nth-child(2){
+  div.about > div:nth-child(2) {
     max-width: 550px;
     width: auto;
   }
@@ -481,8 +477,6 @@ div.about > div:nth-child(2) {
   div.image-holder-projects {
     align-self: center;
   }
-
-  
 }
 
 /* footer styles */
@@ -552,27 +546,28 @@ div.dropdown {
   border: 1px solid rgba(255, 255, 255, 0.02);
 
   border-radius: 1rem;
+  transition: all .1s linear;
 }
 
-div.dropdown:hover, div.dropdown:active{
+div.dropdown:hover,
+div.dropdown:active {
   cursor: pointer;
   background: rgba(255, 255, 255, 0.074);
+  border-radius: .5rem;
 }
-
-
 
 div.dropdown div {
   margin: 0 0.2rem;
 }
 
-div.menuItems  a:hover{
+div.menuItems a:hover {
   filter: drop-shadow(1px 2px 2px #000);
   /* transition: 1s ease-in-out all; */
 }
 
 .activeMenu {
   display: block;
-  animation-duration: .7s;
+  animation-duration: 0.7s;
   animation-name: slide;
 }
 

@@ -19,19 +19,19 @@ import About from "./views/content/about";
 import PreLoader from "./views/components/preloader";
 
 function App() {
-  // disabled in production mode.
-
-  // useEffect(() => {
-  //   const handleContextmenu = (event: any) => {
-  //     event.preventDefault();
-  //   };
-  //   document.addEventListener("contextmenu", handleContextmenu);
-  //   return function cleanup() {
-  //     document.removeEventListener("contextmenu", handleContextmenu);
-  //   };
-  // }, []);
 
   let[menuState, setMenuState]=useState(false)
+
+  //Disable Right Click
+  useEffect(()=>{
+    function handleContextMenu(event:any){
+      event.preventDefault()
+    }
+    document.addEventListener("contextmenu",handleContextMenu)
+  },[])
+
+
+  
 
   return (
     <div className="App">

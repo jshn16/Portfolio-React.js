@@ -547,10 +547,17 @@ div.dropdown {
 
   border-radius: 1rem;
   transition: all .1s linear;
+
+ animation-name: blink;
+ animation-timing-function:linear;
+ animation-duration: 1s;
+ animation-iteration-count: infinite;
+ 
 }
 
 div.dropdown:hover,
 div.dropdown:active {
+  animation: none;
   cursor: pointer;
   background: rgba(255, 255, 255, 0.074);
   border-radius: .5rem;
@@ -586,4 +593,13 @@ div.menuItems a:hover {
   to {
     transform: translateX(0px);
   }
+}
+
+
+@keyframes blink {
+
+  50%{
+    opacity: 0.6;
+  }
+ 
 }

@@ -554,7 +554,7 @@ div.dropdown {
   border-radius: 1rem;
 }
 
-div.dropdown:hover{
+div.dropdown:hover, div.dropdown:active{
   cursor: pointer;
   background: rgba(255, 255, 255, 0.074);
 }

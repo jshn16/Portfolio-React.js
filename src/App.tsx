@@ -20,18 +20,18 @@ import PreLoader from "./views/components/preloader";
 
 function App() {
 
-  let[menuState, setMenuState]=useState(false)
+  let [menuState, setMenuState] = useState(false)
 
-  //Disable Right Click
-  useEffect(()=>{
-    function handleContextMenu(event:any){
+ // Disable Right Click
+  useEffect(() => {
+    function handleContextMenu(event: any) {
       event.preventDefault()
     }
-    document.addEventListener("contextmenu",handleContextMenu)
-  },[])
+    document.addEventListener("contextmenu", handleContextMenu)
+  }, [])
 
 
-  
+
 
   return (
     <div className="App">
@@ -62,21 +62,21 @@ function App() {
         <Footer></Footer>
       </HashRouter>
 
-      <div className="dropdown" onClick={()=>{setMenuState(!menuState)}}>
+      <div className="dropdown" onClick={() => { setMenuState(!menuState) }}>
         <div className="menuTrigger" >
-         
-          <a >
+
+          <a>
             <img src="https://s2.svgbox.net/materialui.svg?color=fff&ic=people_alt" alt="" />Hire Me!
           </a>
         </div>
-        <div className={`menuItems ${menuState? "activeMenu":"inactiveMenu"}`}>
+        <div className={`menuItems ${menuState ? "activeMenu" : "inactiveMenu"}`}>
           <a href="tel:6479946544">
-            <img src="https://s2.svgbox.net/materialui.svg?color=fff&ic=phone" alt="dropdown"/>
+            <img src="https://s2.svgbox.net/materialui.svg?color=fff&ic=phone" alt="dropdown" />
           </a>
-          <a  href="mailto:jashannoor2001@gmail.com">
-            <img src="https://s2.svgbox.net/materialui.svg?color=fff&ic=mail" alt="dropdown"/>
+          <a href="mailto:jashannoor2001@gmail.com">
+            <img src="https://s2.svgbox.net/materialui.svg?color=fff&ic=mail" alt="dropdown" />
           </a>
-         
+
         </div>
       </div>
     </div>

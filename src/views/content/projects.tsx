@@ -16,6 +16,7 @@ import ExpressOriginal from "devicons-react/lib/icons/ExpressOriginal";
 import HandlebarsOriginal from "devicons-react/lib/icons/HandlebarsOriginal";
 import NodejsOriginal from "devicons-react/lib/icons/NodejsOriginal";
 import { ReactComponent as MongoDBIcon } from "../../assets/icons/mongodb.svg";
+import { SassOriginal } from 'devicons-react';
 import { ReactComponent as JsIcon } from "../../assets/icons/js.svg";
 import PhotoshopPlain from "devicons-react/lib/icons/PhotoshopPlain";
 import IllustratorPlain from "devicons-react/lib/icons/IllustratorPlain";
@@ -38,13 +39,9 @@ function Project() {
             <img title="Season Sure" alt="appIcon"src={WeatherAppImage} />
           </div>
           <div>
-            <h5>Season Sure</h5>
+            <h5>Weatherly</h5>
             <p>
-              Designed a webpage that emulates the user experience of weather
-              applications using HTML5, CSS3, JSON, and JavaScript. It utilizes
-              openweather, fetch, and geolocation APIs to get data in JSON from
-              popular weather forecasting website. The JSON data is then parsed
-              into respected values.
+            Application designed using HTML5, CSS3, JavaScript, React.js. It utilizes OpenWeather API, Geolocation API and Axios to obtain weather data in the form of JavaScript Objects. Users can either search by city name or allow location services to automatically detect weather. CSS pre-processor Sass is used to style the web application.
             </p>
           </div>
           <div className="languages">
@@ -52,14 +49,15 @@ function Project() {
               {<Html5Icon />}
               {<Css3Icon />}
               {<JsIcon />}
-             
+              {<ReactOriginal />}
+              {<SassOriginal/>}
               
             </div>
             <div>
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://jshn16.github.io/weather-app/"
+                href="https://weatherly-w5qe.onrender.com"
                 className="btn-common"
               >
                 Case Study

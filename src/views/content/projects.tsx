@@ -41,7 +41,7 @@ function Project() {
           <div>
             <h5>Weatherly</h5>
             <p>
-            Web Application designed using HTML5, SASS, JavaScript, React.js that replicates the functioning of a native weather application. It utilizes OpenWeather API, Geolocation API and Axios to obtain weather data in the form of JavaScript Objects. Users can either search by city name or allow location services to automatically detect weather. CSS pre-processor Sass is used to style the web application.
+            Web Application designed using HTML5, SASS, JavaScript, React.js that replicates the functioning of a native weather application. It utilizes OpenWeather API, Geolocation API and Axios to obtain weather data in the form of JavaScript Objects. Users can either search by city name or allow location services to automatically detect weather.The searched location is stored in localStorage and displayed in recent weather section. CSS pre-processor Sass is used to style the web application.
             </p>
           </div>
           <div className="languages">
@@ -50,6 +50,7 @@ function Project() {
               {<Css3Icon />}
               {<JsIcon />}
               {<ReactOriginal />}
+              {<TiCloudStorage/>}
               {<SassOriginal/>}
               
             </div>

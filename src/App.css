@@ -64,11 +64,7 @@ a.navbar-brand {
   height: 50px;
 }
 
-a.navbar-brand img:hover,
-a.navbar-brand img:active,
-a.navbar-brand img:focus {
-  height: 105%;
-}
+
 
 a.navbar-brand img {
   transition: all 0.1s linear;
@@ -108,11 +104,7 @@ div.box {
   background-size: 200%;
 }
 
-.btn-common:hover {
-  background-position: 200%;
 
-  border-radius: 0.5rem;
-}
 
 footer {
   padding: 0.5rem;
@@ -212,9 +204,7 @@ path {
   fill: #ccc !important;
 }
 
-div.holder div:nth-child(3) svg :hover {
-  fill: #fff !important;
-}
+
 
 div.holder div:nth-child(4) {
   margin-bottom: 1rem;
@@ -342,9 +332,7 @@ div.aboutPhotoHolder img {
   transition: all 0.8s ease-in-out;
 }
 
-div.aboutPhotoHolder img:hover {
-  transform: scale(1.6);
-}
+
 
 div.about {
   display: flex;
@@ -488,10 +476,7 @@ a.icon {
   transition: all 0.2s ease-in-out;
 }
 
-a.icon:hover {
-  font-size: 2.3rem;
-  color: #fff;
-}
+
 
 a.icon svg {
   fill: red !important;
@@ -555,22 +540,13 @@ div.dropdown {
  
 }
 
-div.dropdown:hover,
-div.dropdown:active {
-  animation: none;
-  cursor: pointer;
-  background: rgba(255, 255, 255, 0.074);
-  border-radius: .5rem;
-}
+
 
 div.dropdown div {
   margin: 0 0.2rem;
 }
 
-div.menuItems a:hover {
-  filter: drop-shadow(1px 2px 2px #000);
-  /* transition: 1s ease-in-out all; */
-}
+
 
 .activeMenu {
   display: block;
@@ -602,4 +578,44 @@ div.menuItems a:hover {
     opacity: 0.6;
   }
  
+}
+
+@media (hover:hover) {
+  div.menuItems a:hover {
+    filter: drop-shadow(1px 2px 2px #000);
+    /* transition: 1s ease-in-out all; */
+  }
+
+  div.dropdown:hover,
+div.dropdown:active {
+  animation: none;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.074);
+  border-radius: .5rem;
+}
+
+a.icon:hover {
+  font-size: 2.3rem;
+  color: #fff;
+}
+
+div.aboutPhotoHolder img:hover {
+  transform: scale(1.6);
+}
+
+div.holder div:nth-child(3) svg :hover {
+  fill: #fff !important;
+}
+
+.btn-common:hover {
+  background-position: 200%;
+
+  border-radius: 0.5rem;
+}
+
+a.navbar-brand img:hover,
+a.navbar-brand img:active,
+a.navbar-brand img:focus {
+  height: 105%;
+}
 }

@@ -14,7 +14,7 @@ function Services() {
         <div className="box">
             <h1 className="bold">Services</h1>
             <hr />
-            <section className="wrapper">
+            <section className="wrapper" id="services">
                 <div className="holder">
                     <div className="image-holder-services">
                         <img title="Graphic Designing" src={graphicDesiginingLogo} alt="appIcon" />
@@ -35,7 +35,7 @@ function Services() {
                                 </li>
 
                                 <li>
-                                    {" "}
+                                   
                                     Using elements such as shapes, colors, typefaces, typography,
                                     images and more to convey ideas to an audience
                                 </li>

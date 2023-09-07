@@ -33,7 +33,7 @@ function Project() {
     <div className="box">
       <h1 className="bold">Projects</h1>
       <hr />
-      <section className="wrapper">
+      <section className="wrapper" id="projects">
         <div className="holder">
           <div className="image-holder-projects">
             <img title="Season Sure" alt="appIcon"src={WeatherAppImage} />

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
+import "./App.scss";
 import "bootstrap/dist/js/bootstrap.min.js";
 
 import { HashRouter, BrowserRouter, Routes, Route } from "react-router-dom";
@@ -22,7 +22,7 @@ function App() {
 
   let [menuState, setMenuState] = useState(false)
 
- // Disable Right Click
+ //Disable Right Click
   useEffect(() => {
     function handleContextMenu(event: any) {
       event.preventDefault()

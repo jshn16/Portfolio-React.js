@@ -19,13 +19,14 @@ function header(){
                 <NavLink className="nav-link" id="Home" aria-current="page" to="/home">Home</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" id="Contact" to="/contact">Contact</NavLink>
+                 <NavLink className="nav-link" id="Service" to="/services">Services</NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" id="Project" to="/projects">Projects</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" id="Service" to="/services">Services</NavLink>
+              <NavLink className="nav-link" id="Contact" to="/contact">Contact</NavLink>
+               
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" id="About" to="/about">About</NavLink>

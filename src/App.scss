@@ -582,12 +582,17 @@ div.dropdown div {
   margin: 0 0.2rem;
 }
 
+div.dropdown{
+  transition: 8s all linear;
+}
 
 
 .activeMenu {
   display: block;
   animation-duration: 0.7s;
   animation-name: slide;
+
+  
 }
 
 .inactiveMenu {
@@ -600,10 +605,12 @@ div.dropdown div {
 @keyframes slide {
   from {
     transform: translateX(99px);
+    
   }
 
   to {
     transform: translateX(0px);
+   
   }
 }
 

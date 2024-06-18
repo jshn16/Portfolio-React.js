@@ -13,7 +13,7 @@ function Footer() {
           <a target="_blank" className="icon" href="https://www.instagram.com/jshnsaini/"><InstagramIcon /></a>
         </div>
         <div>
-          <span>&copy; 2023 jshnsaini</span>
+          <span>&copy; 2024 jshnsaini</span>
         </div>
 
 

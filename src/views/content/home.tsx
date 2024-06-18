@@ -7,7 +7,7 @@ function Home() {
 
     const saveFile = () => {
 
-        fileSaver.saveAs(Pdf, 'resume.pdf')
+        fileSaver.saveAs(Pdf, 'web-developer.pdf')
     }
 
     useEffect(() => {
